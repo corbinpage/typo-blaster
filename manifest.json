@@ -11,7 +11,14 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["page.js"]
+    }
   ],
   "background": {
     "scripts": ["background.js"],
