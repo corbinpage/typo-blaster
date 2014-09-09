@@ -1,26 +1,68 @@
-    <!doctype html>
-    <html>
-      <head>
-        <title>Typo Blaster</title>
-        <style>
-          body {
-            min-width: 357px;
-            overflow-x: hidden;
-          }
+<!doctype html>
+<html>
+<head>
+  <title>Typo Blaster</title>
 
-          img {
-            margin: 5px;
-            border: 2px solid black;
-            vertical-align: middle;
-            width: 75px;
-            height: 75px;
-          }
-        </style>
+  <!-- Bootstrap Core CSS -->
+  <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <script src="popup.js"></script>
-      </head>
-      <body id="body">
-        <h1>Got it!</h1>
-      </body>
-    </html>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+
+  <script src="popup.js"></script>
+</head>
+<body id="body">
+
+
+  <form class="form-horizontal">
+    <fieldset>
+      <!-- Form Name -->
+      <legend>Typo Blaster</legend>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textarea">Text Area</label>
+        <div class="col-md-4">                     
+          <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Text Input</label>  
+        <div class="col-md-4">
+          <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
+          <span class="help-block">asdfasdfasdf</span>  
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textarea">Text Area</label>
+        <div class="col-md-4">                     
+          <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
+        </div>
+      </div>
+
+      <!-- Button (Double) -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="button1id">Double Button</label>
+        <div class="col-md-8">
+          <button id="button1id" name="button1id" class="btn btn-success">Good Button</button>
+          <button id="button2id" name="button2id" class="btn btn-danger">Scary Button</button>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+
+
+
+
+
+
+
+
+</body>
+</html>
 
