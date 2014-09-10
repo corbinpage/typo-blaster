@@ -1,8 +1,3 @@
-
-
-// 1) This script executes
-// 2) The popup is rendered
-
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
   document.getElementById("cancel-button").addEventListener('click', cancelButtonClick);
 

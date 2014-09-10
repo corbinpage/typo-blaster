@@ -1,29 +1,13 @@
 function getSelectionText() {
+    var range = $.Range.current();
     var text = "";
+    var complete = "";
 
-
-    
-    if ($.Range.current()) {
-        text = $.Range.current().toString();
-        complete = $.Range.current().start('+20').range.end('-20').toString();
-    } else if (document.selection && document.selection.type != "Control") {
-        text = document.selection.createRange().text;
-        complete = document.selection.createRange().text;
-    }    
-
-    // if (window.getSelection) {
-    //     text = window.getSelection().toString();
-    // } else if (document.selection && document.selection.type != "Control") {
-    //     text = document.selection.createRange().text;
-    // }
-
-
-
+    if (!!(range.toString())) {
+        text = range.toString();
+        complete = range.start('-20').end('+20').toString();
+    }  
     return [text, complete];
-}
-
-function getDomainAndURL() {
-
 }
 
 chrome.runtime.onMessage.addListener(
