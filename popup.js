@@ -4,37 +4,62 @@
 // 2) The popup is rendered
 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-
-  console.log("Sending Message...");
+  document.getElementById("cancel-button").addEventListener('click', cancelButtonClick);
 
   // Sends message to the page.js and gets highlights text
+  console.log("Sending message to tab...");
   chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
-    console.log(response.text);
+    console.log("Received message from tab...");
+    console.log(response);
+    document.getElementById("submit-button").addEventListener('click', submitButtonClick);
 
-    changeUI(response);
-    sendData();
+    populateHighlightedText(response);
+    
   });
 });
+
+function populateHighlightedText(response) {
+  document.getElementById("typo-text").innerHTML = response.text;
+}
+
+function cancelButtonClick() {
+  window.close();
+}
+
+function submitButtonClick() {
+  sendDataToServer();
+  successUI();
+  window.close();
+}
+
+function successUI() {
+  // Provide feedback to the user that the request was successful
+}
+
+function sendDataToServer() {
+  console.log("Sending Data...")
+  // load();
+}
 
 var clientId = '957189833738-4sfcgg8n0d6upcvohpuodfrramcl3rvt.apps.googleusercontent.com';
 var apiKey = 'AIzaSyC1I2yx0xmk0E2dsBnmDLTQpAIdlhokpkw';
 var scopes = 'https://www.googleapis.com/auth/plus.me';
 
-function changeUI(response) {
-  document.getElementById("typo-text").innerHTML = response.text;
-}
-
-function sendData() {
-  console.log("Sending Data...")
-  handleClientLoad();
-
-
-}
 
 function load() {
   gapi.client.setApiKey(apiKey);
-  gapi.client.load('drive', 'v2');
+  gapi.client.load('drive', 'v2', makeRequest);
 }
+
+function makeRequest() {
+  var request = gapi.client.urlshortener.url.get({
+    'shortUrl': 'http://goo.gl/fbsS'
+  });
+  request.execute(function(response) {
+    appendResults(response.longUrl);
+  });
+}
+
 
 function handleClientLoad() {
   // Step 2: Reference the API key

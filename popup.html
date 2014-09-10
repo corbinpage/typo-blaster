@@ -11,8 +11,8 @@
   <!-- // <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script> -->
 
   <link href="popup.css" rel="stylesheet">
-  <!-- <script src="https://apis.google.com/js/client.js"></script> -->
-  <script src="https://apis.google.com/js/client.js"></script>
+  <!-- <script src="jquery-2.1.1.min.js"></script>
+  <script src="jquerypp.custom.js"></script> -->
   <script src="popup.js"></script>
 </head>
 <body id="body">
@@ -25,7 +25,7 @@
       <div class="form-group">
         <label class="col-md-4 control-label" for="textarea">Typo</label>
         <div class="col-md-4">                     
-          <textarea class="form-control" id="typo-text" name="typo-text"></textarea>
+          <textarea class="form-control" id="typo-text" name="typo-text" placeholder="You need to highlight the typo, silly!"></textarea>
           <span class="help-block">Thanks for helping! We'll be sending your suggestion to the site admins.</span>
         </div>
       </div>
@@ -51,8 +51,8 @@
       <!-- Button (Double) -->
       <div class="form-group">
         <div class="col-md-8">
-          <button id="button1id" name="button1id" class="btn btn-success">Submit Typo!</button>
-          <button id="button2id" name="button2id" class="btn btn-danger">Cancel</button>
+          <button id="submit-button" name="button1id" class="btn btn-success">Submit Typo!</button>
+          <button id="cancel-button" name="button2id" class="btn btn-danger">Cancel</button>
         </div>
       </div>
 
