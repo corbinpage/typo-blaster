@@ -19,6 +19,15 @@ body {
   color: #737373;
 }
 
+.warning::-webkit-input-placeholder {
+    color: red;
+    font-weight: bold;
+}
+
+.invisible {
+  display: none;
+}
+
 
 button,
 input,

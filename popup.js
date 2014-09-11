@@ -1,84 +1,77 @@
-chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-  document.getElementById("cancel-button").addEventListener('click', cancelButtonClick);
-
-  // Sends message to the page.js and gets highlights text
-  console.log("Sending message to tab...");
-  chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
-    console.log("Received message from tab...");
-    console.log(response);
-    document.getElementById("submit-button").addEventListener('click', submitButtonClick);
-
-    populateHighlightedText(response);
-    
-  });
-});
-
-function populateHighlightedText(response) {
-  document.getElementById("typo-text").innerHTML = response.text;
-}
+// JS run in the Chrome extension
+var send_response;
 
 function cancelButtonClick() {
+  // Cancel the form submit
+  event.preventDefault();
+  // Close popup window
   window.close();
 }
 
 function submitButtonClick() {
-  sendDataToServer();
-  successUI();
-  window.close();
+  // Cancel the form submit
+  event.preventDefault();
+  var typo_text = document.getElementById("typo-text").value;
+
+  if(!!typo_text) {
+    sendDataToServer();
+    changeToSuccessUI();
+  }
+  else {
+    document.querySelector('#typo-text').classList.toggle('warning');
+  }
 }
 
-function successUI() {
-  // Provide feedback to the user that the request was successful
+// Provide feedback to the user that the submission occurred
+function changeToSuccessUI() {
+  document.querySelector('#input-screen').classList.toggle('invisible');
+  document.querySelector('#success-screen').classList.toggle('invisible');
 }
 
 function sendDataToServer() {
   console.log("Sending Data...")
-  // load();
+
+  // send_response
+  //   url
+  //   domain
+  //   text
+  //   complete_text
+
+    // user_email
+    // comments
+    // created_date
+
+    // id
+    // status
+    // domain_email
+    // email_date
+
+
+
 }
 
-var clientId = '957189833738-4sfcgg8n0d6upcvohpuodfrramcl3rvt.apps.googleusercontent.com';
-var apiKey = 'AIzaSyC1I2yx0xmk0E2dsBnmDLTQpAIdlhokpkw';
-var scopes = 'https://www.googleapis.com/auth/plus.me';
+function populateHighlightedText() {
+ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+   //Sends message to the page.js and gets highlights text
+   console.log("Sending message to tab...");
+   chrome.tabs.sendMessage(tabs[0].id, {greeting: "hello"}, function(response) {
+    console.log("Received message from tab...");
+    send_response = response;
+    console.log(response);
 
-
-function load() {
-  gapi.client.setApiKey(apiKey);
-  gapi.client.load('drive', 'v2', makeRequest);
-}
-
-function makeRequest() {
-  var request = gapi.client.urlshortener.url.get({
-    'shortUrl': 'http://goo.gl/fbsS'
+    document.getElementById("typo-text").innerHTML = response.text;
+    
   });
-  request.execute(function(response) {
-    appendResults(response.longUrl);
-  });
+ });
 }
 
+// When the popup HTML has loaded
+window.addEventListener('load', function(evt) {
+  // Set click event listeners on the buttons
+  document.getElementById("main-form").addEventListener('submit', function(){return false;});
+  document.getElementById("cancel-button").addEventListener('click', cancelButtonClick);
+  document.getElementById("submit-button").addEventListener('click', submitButtonClick);
 
-function handleClientLoad() {
-  // Step 2: Reference the API key
-  console.log("1");
-  gapi.client.setApiKey(apiKey);
+  populateHighlightedText()
 
-  console.log("2")
-
-  window.setTimeout(checkAuth,1);
-}
-
-function checkAuth() {
-  gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
-}
-
-function handleAuthResult(authResult) {
-  console.log(authResult);
-
-  // var authorizeButton = document.getElementById('authorize-button');
-  // if (authResult && !authResult.error) {
-    //   authorizeButton.style.visibility = 'hidden';
-    //   makeApiCall();
-    // } else {
-      //   authorizeButton.style.visibility = '';
-      //   authorizeButton.onclick = handleAuthClick;
-      // }
-    }
+});
