@@ -12,6 +12,14 @@ footer {
   margin-left: 0px; 
 }
 
+#fa-edit {
+  left: 5px;
+}
+
+#how-it-works {
+  padding-top: 25px;
+}
+
 .alert-wrapper {
   position: absolute;
   margin-top: 100px;
@@ -26,7 +34,7 @@ footer {
   margin-right: auto;
 }
 
-// // make all images responsive by default
+//*/ // make all images responsive by default
 // img {
   //   @extend .img-responsive;
   //   margin: 0 auto;
@@ -67,7 +75,7 @@ footer {
               // section {
                 //   @extend .row;
                 //   margin-top: 20px;
-                //   }
+                //   }*/
 
                 // Styles for form views
                 // using Bootstrap

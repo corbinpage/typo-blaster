@@ -11,7 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140905214843) do
+ActiveRecord::Schema.define(version: 20140913182848) do
+
+  create_table "domains", force: true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.string   "email"
+    t.string   "string"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "typos", force: true do |t|
+    t.string   "status"
+    t.string   "user_email"
+    t.text     "highlighted_text"
+    t.text     "complete_text"
+    t.text     "comments"
+    t.text     "url"
+    t.integer  "domain_id"
+    t.datetime "email_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "typos", ["domain_id"], name: "index_typos_on_domain_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

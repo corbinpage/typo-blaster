@@ -14,6 +14,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'thin'
 group :development do
+  # gem 'rmagick'
   gem 'sqlite3'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
