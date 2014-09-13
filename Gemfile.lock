@@ -76,6 +76,7 @@ GEM
     faker (1.4.3)
       i18n (~> 0.5)
     ffi (1.9.3)
+    google-analytics-rails (0.0.5)
     hike (1.2.3)
     hub (1.12.2)
     i18n (0.6.11)
@@ -208,6 +209,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   faker
+  google-analytics-rails
   hub
   jbuilder (~> 2.0)
   jquery-rails
