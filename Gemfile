@@ -13,7 +13,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
 gem 'thin'
-gem 'google-analytics-rails'
+gem 'google-analytics-rails' 
 group :development do
   # gem 'rmagick'
   gem 'sqlite3'
