@@ -10,6 +10,7 @@ class TyposController < ApplicationController
       puts "Error - Typo not Saved"
       puts "@typo"
       render :json => {status: "Error - Typo not Saved"}
+    end
   end
 
 
