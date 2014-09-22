@@ -222,7 +222,7 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
-.header {
+.header { 
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
