@@ -5,9 +5,12 @@ class Typo < ActiveRecord::Base
   STATUS_EMAIL_SENT = "EMAIL_SENT"
 
   def self.save_new(params)
-    new_typo = Typo.new(params[:typo]);
-
+    new_typo = Typo.new(params[:typo])
+    puts "Typo: " + new_typo.inspect
+    
+    domain_text = params[:typo].delete("domain_text")
     puts "Params: " + params.inspect
+    new_typo = Typo.new(params[:typo])
 
     # new_typo[:status]
     # new_typo[:user_email] = params[:user_email]
@@ -16,7 +19,7 @@ class Typo < ActiveRecord::Base
     # new_typo[:comments] = params[:comments]
     # new_typo[:url] = params[:url]
     new_typo[:status] = STATUS_READY_FOR_EMAIL
-    new_typo[:domain_id] = Domain.find_or_create_by(url: params[:domain_text]).id
+    new_typo[:domain_id] = Domain.find_or_create_by(url: domain_text).id
 
     puts "New Typo: " + new_typo.inspect
 
