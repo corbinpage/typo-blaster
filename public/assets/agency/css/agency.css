@@ -223,7 +223,6 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 .header {
-  background-image: url('/assets/content-no-desk-enhanced.jpg');
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
