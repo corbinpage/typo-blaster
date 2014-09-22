@@ -4,10 +4,11 @@ class Typo < ActiveRecord::Base
   STATUS_READY_FOR_EMAIL = "READY_FOR_EMAIL"
   STATUS_EMAIL_SENT = "EMAIL_SENT"
 
-  def self.save_new(params)
-    domain_text = params[:typo].delete("domain_text")
-    puts "Params: " + params.inspect
-    new_typo = Typo.new(params[:typo])
+  def self.save_new(typo_params)
+    puts "Params1: " + typo_params.inspect
+    domain_text = typo_params[:typo].delete("domain_text")
+    puts "Params: " + typo_params.inspect
+    new_typo = Typo.new(typo_params)
 
     # new_typo[:status]
     # new_typo[:user_email] = params[:user_email]

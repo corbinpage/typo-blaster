@@ -2,7 +2,7 @@ class TyposController < ApplicationController
   skip_before_filter :verify_authenticity_token
 
   def create
-    @typo = Typo.save_new(params)
+    @typo = Typo.save_new(typo_params)
 
     puts @typo.inspect
 
