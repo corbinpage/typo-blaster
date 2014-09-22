@@ -4,7 +4,10 @@ class TyposController < ApplicationController
   def create
     @typo = Typo.save_new(params)
 
+    puts @typo.inspect
+
     if @typo
+      puts "here"
       render :json => @typo
     else
       puts "Error - Typo not Saved"
