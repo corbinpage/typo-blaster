@@ -33,6 +33,6 @@ module RailsDevise
     # config.i18n.default_locale = :de
 
     # Autoload lib directory
-    config.autoload_paths += Dir["#{config.root}/lib/agency/**/"]
+    config.autoload_paths += Dir["#{config.root}/lib/assets/agency/**/"]
   end
 end
