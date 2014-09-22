@@ -6,7 +6,6 @@ class Typo < ActiveRecord::Base
 
   def self.save_new(typo_params)
     puts "Params1: " + typo_params.inspect
-    new_typo = Typo.new(typo_params)
     domain_text = typo_params.delete("domain_text")
     puts "Params2: " + typo_params.inspect
     new_typo = Typo.new(typo_params)
