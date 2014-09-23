@@ -63,6 +63,7 @@ Rails.application.configure do
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
   # config.assets.precompile += %w( search.js )
+  config.assets.paths << "#{Rails}/lib/assets/agency/font-awesome-4.1.0/fonts"
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
 
   # Ignore bad email addresses and do not raise email delivery errors.
