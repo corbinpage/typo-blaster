@@ -15,3 +15,9 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require_tree .
+//= require ../../../lib/assets/agency/js/jquery.easing.min.js
+//= require ../../../lib/assets/agency/js/classie.js
+//= require ../../../lib/assets/agency/js/cbpAnimatedHeader.js
+//= require ../../../lib/assets/agency/js/jqBootstrapValidation.js
+//= require ../../../lib/assets/agency/js/contact_me.js
+//= require ../../../lib/assets/agency/js/agency.js
