@@ -12,5 +12,6 @@
  *
  *= require_tree .
  *= require_self
- *= require_tree ../../../lib/assets/agency/.
+ *= require ../../../lib/assets/agency/css/agency.css
+ *= require ../../../lib/assets/agency/font-awesome-4.1.0/css/font-awesome.min.css
  */
