@@ -33870,3 +33870,3466 @@ Content-Type: text/html;
 Content-Transfer-Encoding: 7bit
 
 <p>This is a Test Title</p>
+  [1m[35mTypo Load (0.3ms)[0m  SELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'T'
+  [1m[36mTypo Load (0.3ms)[0m  [1mSELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'
+  [1m[36mTypo Load (0.4ms)[0m  [1mSELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'[0m
+  [1m[36mTypo Load (0.1ms)[0m  [1mSELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'STATUS_READY_FOR_EMAIL'[0m
+  [1m[35mTypo Load (0.3ms)[0m  SELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'[0m
+  [1m[36mTypo Load (0.1ms)[0m  [1mSELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'STATUS_READY_FOR_EMAIL'[0m
+  [1m[36mTypo Load (0.1ms)[0m  [1mSELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'[0m
+  Rendered typo_mailer/initial_notification.html.erb (2.3ms)
+
+TypoMailer#initial_notification: processed outbound mail in 30.6ms
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered typo_mailer/initial_notification.html.erb (0.0ms)
+
+TypoMailer#initial_notification: processed outbound mail in 9.4ms
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'
+  [1m[36mTypo Load (0.1ms)[0m  [1mSELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'[0m
+  Rendered typo_mailer/initial_notification.html.erb (1.3ms)
+
+TypoMailer#initial_notification: processed outbound mail in 18.2ms
+
+Sent mail to corbin.page@gmail.com (2386.9ms)
+Date: Thu, 02 Oct 2014 20:27:01 -0400
+From: Typo Spy <typo.spy@gmail.com>
+To: corbin.page@gmail.com
+Message-ID: <542ded556af88_317b8082dbf860825@Corbins-MacBook-Air.local.mail>
+Subject: Typo Notifier
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>This is a Test Title</p>
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered typo_mailer/initial_notification.html.erb (0.0ms)
+
+TypoMailer#initial_notification: processed outbound mail in 10.9ms
+
+Sent mail to corbin.page@gmail.com (1133.7ms)
+Date: Thu, 02 Oct 2014 20:27:03 -0400
+From: Typo Spy <typo.spy@gmail.com>
+To: corbin.page@gmail.com
+Message-ID: <542ded57c8d56_317b8082dbf8609c8@Corbins-MacBook-Air.local.mail>
+Subject: Typo Notifier
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>This is a Test Title</p>
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mDomain Load (0.6ms)[0m  [1mSELECT  "domains".* FROM "domains"   ORDER BY "domains"."id" DESC LIMIT 1[0m
+  [1m[35mDomain Load (0.2ms)[0m  SELECT  "domains".* FROM "domains"   ORDER BY "domains"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "domains" SET "email" = ?, "updated_at" = ? WHERE "domains"."id" = 1  [["email", "corbin.page@gmail.com"], ["updated_at", "2014-10-03 00:40:54.926231"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mDomain Load (0.2ms)[0m  SELECT  "domains".* FROM "domains"   ORDER BY "domains"."id" DESC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'
+  [1m[36mTypo Load (0.2ms)[0m  [1mSELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'[0m
+  [1m[35mDomain Load (0.2ms)[0m  SELECT  "domains".* FROM "domains"  WHERE "domains"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered typo_mailer/initial_notification.html.erb (11.9ms)
+
+TypoMailer#initial_notification: processed outbound mail in 125.9ms
+
+Sent mail to corbin.page@gmail.com (1809.7ms)
+Date: Thu, 02 Oct 2014 21:33:09 -0400
+From: Typo Notification <typo.spy@gmail.com>
+To: corbin.page@gmail.com
+Message-ID: <542dfcd5c2ba5_326d8082dbf868534@Corbins-MacBook-Air.local.mail>
+Subject: Typo Notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  padding: 0;
+  vertical-align: top;
+}
+.spacer,
+.border {
+  font-size: 1px;
+  line-height: 1px;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.image {
+  font-size: 0;
+  Margin-bottom: 27px;
+}
+.image img {
+  display: block;
+}
+.logo img {
+  display: block;
+}
+strong {
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li {
+  Margin-top: 0;
+}
+ol,
+ul,
+li {
+  padding-left: 0;
+}
+.btn a {
+  mso-hide: all;
+}
+blockquote {
+  Margin-top: 0;
+  Margin-right: 0;
+  Margin-bottom: 0;
+  padding-right: 0;
+}
+.column-top {
+  font-size: 20px;
+  line-height: 20px;
+}
+.column-bottom {
+  font-size: 3px;
+  line-height: 3px;
+}
+.column {
+  text-align: left;
+}
+.contents {
+  width: 100%;
+}
+.padded {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wrapper {
+  background-color: #fefefe;
+  width: 100%;
+  min-width: 620px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+table.wrapper {
+  table-layout: fixed;
+}
+.one-col,
+.two-col,
+.three-col {
+  Margin-left: auto;
+  Margin-right: auto;
+  width: 600px;
+}
+.one-col p,
+.one-col ol,
+.one-col ul {
+  Margin-bottom: 27px;
+}
+.two-col p,
+.two-col ol,
+.two-col ul {
+  Margin-bottom: 24px;
+}
+.two-col .image {
+  Margin-bottom: 24px;
+}
+.two-col .column-bottom {
+  font-size: -4px;
+  line-height: -4px;
+}
+.two-col .column {
+  width: 300px;
+}
+.three-col p,
+.three-col ol,
+.three-col ul {
+  Margin-bottom: 21px;
+}
+.three-col .image {
+  Margin-bottom: 21px;
+}
+.three-col .column-bottom {
+  font-size: -1px;
+  line-height: -1px;
+}
+.three-col .column {
+  width: 200px;
+}
+@media only screen and (max-width: 620px) {
+  [class*=wrapper] {
+    min-width: 320px !important;
+    width: 100%!important;
+  }
+  [class*=wrapper] .one-col,
+  [class*=wrapper] .two-col,
+  [class*=wrapper] .three-col {
+    width: 320px !important;
+  }
+  [class*=wrapper] .column {
+    display: block;
+    float: left;
+    width: 320px !important;
+  }
+  [class*=wrapper] .padded {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  [class*=wrapper] .full {
+    display: none;
+  }
+  [class*=wrapper] .block {
+    display: block !important;
+  }
+  [class*=wrapper] .hide {
+    display: none !important;
+  }
+  [class*=wrapper] .image {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .image img {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+.wrapper h1 {
+  font-weight: 400;
+}
+.wrapper h2 {
+  font-weight: 700;
+}
+.wrapper h3 {
+  font-style: italic;
+  font-weight: 700;
+}
+.wrapper p,
+.wrapper ol,
+.wrapper ul {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.wrapper blockquote {
+  font-style: italic;
+}
+.two-col h2 {
+  letter-spacing: -0.028em;
+}
+.divider {
+  font-size: 4px;
+  line-height: 4px;
+}
+.contents .divider,
+.footer .divider table {
+  Margin-bottom: 27px;
+}
+.divider .bull {
+  background-color: #cccccc;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1px;
+  height: 4px;
+  line-height: 1px;
+  overflow: hidden;
+  width: 4px;
+}
+.email-top,
+.email-bottom {
+  font-size: 54px;
+  line-height: 54px;
+}
+.column {
+  color: #353638;
+}
+.btn {
+  Margin-bottom: 27px;
+}
+.wrapper .btn a {
+  border: 1px solid #888888;
+  border-radius: 5px;
+  color: #888888;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none !important;
+  transition: border-color 0.2s, color 0.2s;
+}
+.wrapper .btn a:hover {
+  border-color: #353638 !important;
+  color: #353638 !important;
+}
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper p,
+.wrapper ol,
+.wrapper ul,
+.wrapper .btn a,
+.wrapper .header td,
+.wrapper .header .logo,
+.wrapper .footer div {
+  font-family: Georgia, serif;
+}
+@media screen and (min-width: 0) {
+  .wrapper h1,
+  .wrapper h2,
+  .wrapper h3,
+  .wrapper p,
+  .wrapper ol,
+  .wrapper ul,
+  .wrapper .btn a,
+  .wrapper .header td,
+  .wrapper .header .logo,
+  .wrapper .footer div {
+    font-family: Merriweather, Georgia, serif !important;
+  }
+}
+.wrapper a {
+  color: #289fd8;
+  text-decoration: underline;
+}
+.wrapper a:hover {
+  text-decoration: none !important;
+}
+.wrapper h1 {
+  font-size: 32px;
+  line-height: 42px;
+  Margin-bottom: 24px;
+}
+.wrapper h2 {
+  font-size: 22px;
+  line-height: 30px;
+  Margin-bottom: 16px;
+}
+.wrapper h3 {
+  font-size: 18px;
+  line-height: 26px;
+  Margin-bottom: 12px;
+}
+.wrapper h1 a,
+.wrapper h2 a,
+.wrapper h3 a {
+  color: #353638;
+  text-decoration: none;
+}
+.wrapper p,
+.wrapper ol,
+.wrapper ul {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.wrapper li {
+  Margin-bottom: 14px;
+}
+.wrapper ol {
+  Margin-left: 24px;
+}
+.wrapper ol li {
+  padding-left: 4px;
+}
+.wrapper ul {
+  margin-left: 18px;
+}
+.wrapper ul li {
+  padding-left: 9px;
+}
+.wrapper blockquote {
+  border-left: 4px solid #808080;
+  color: #808080;
+  Margin-left: 0;
+  padding-left: 17px;
+}
+.one-col .column table:nth-last-child(2) td h1:last-child,
+.one-col .column table:nth-last-child(2) td h2:last-child,
+.one-col .column table:nth-last-child(2) td h3:last-child,
+.one-col .column table:nth-last-child(2) td p:last-child,
+.one-col .column table:nth-last-child(2) td ol:last-child,
+.one-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 27px;
+}
+.one-col p,
+.one-col ol,
+.one-col ul {
+  font-size: 17px;
+  line-height: 27px;
+}
+.two-col .column table:nth-last-child(2) td h1:last-child,
+.two-col .column table:nth-last-child(2) td h2:last-child,
+.two-col .column table:nth-last-child(2) td h3:last-child,
+.two-col .column table:nth-last-child(2) td p:last-child,
+.two-col .column table:nth-last-child(2) td ol:last-child,
+.two-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 24px;
+}
+.two-col .column-bottom {
+  font-size: 6px;
+  line-height: 6px;
+}
+.two-col h1 {
+  font-size: 28px;
+  line-height: 36px;
+  Margin-bottom: 20px;
+}
+.two-col h2 {
+  font-size: 22px;
+  line-height: 30px;
+  Margin-bottom: 14px;
+}
+.two-col h3 {
+  font-size: 16px;
+  line-height: 24px;
+  Margin-bottom: 10px;
+}
+.two-col p,
+.two-col ol,
+.two-col ul {
+  font-size: 15px;
+  line-height: 24px;
+}
+.two-col ol {
+  Margin-left: 21px;
+}
+.two-col ol li {
+  padding-left: 3px;
+}
+.two-col ul {
+  Margin-left: 18px;
+}
+.two-col ul li {
+  padding-left: 6px;
+}
+.two-col li {
+  Margin-bottom: 12px;
+}
+.two-col .divider {
+  Margin-bottom: 24px;
+}
+.two-col blockquote {
+  border-left-width: 3px;
+  padding-left: 15px;
+}
+.two-col .btn {
+  Margin-bottom: 24px;
+}
+.two-col .btn a {
+  font-size: 13px;
+  line-height: 21px;
+  padding: 10px 18px;
+}
+.three-col .column table:nth-last-child(2) td h1:last-child,
+.three-col .column table:nth-last-child(2) td h2:last-child,
+.three-col .column table:nth-last-child(2) td h3:last-child,
+.three-col .column table:nth-last-child(2) td p:last-child,
+.three-col .column table:nth-last-child(2) td ol:last-child,
+.three-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 21px;
+}
+.three-col .column-bottom {
+  font-size: 9px;
+  line-height: 9px;
+}
+.three-col h1 {
+  font-size: 24px;
+  line-height: 32px;
+  Margin-bottom: 16px;
+}
+.three-col h2 {
+  font-size: 16px;
+  line-height: 24px;
+  Margin-bottom: 12px;
+}
+.three-col h3 {
+  font-size: 14px;
+  line-height: 22px;
+  Margin-bottom: 8px;
+}
+.three-col p,
+.three-col ol,
+.three-col ul {
+  font-size: 13px;
+  line-height: 21px;
+}
+.three-col ul {
+  Margin-left: 16px;
+}
+.three-col ul li {
+  padding-left: 6px;
+}
+.three-col ol {
+  Margin-left: 18px;
+}
+.three-col ol li {
+  padding-left: 4px;
+}
+.three-col li {
+  Margin-bottom: 10px;
+}
+.three-col .divider {
+  Margin-bottom: 21px;
+}
+.three-col blockquote {
+  border-left-width: 2px;
+  padding-left: 13px;
+}
+.three-col .btn {
+  Margin-bottom: 21px;
+}
+.three-col .btn a {
+  font-size: 11px;
+  line-height: 19px;
+  padding: 8px 14px;
+}
+.header,
+.footer {
+  Margin-left: auto;
+  Margin-right: auto;
+  width: 560px;
+}
+.header td {
+  color: #aaaaaa;
+  font-size: 24px;
+}
+.header .logo {
+  padding-bottom: 27px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: #202020;
+}
+.header .logo a {
+  text-decoration: none;
+  color: #202020;
+}
+.footer div {
+  color: #bbbbbb;
+  font-size: 11px;
+  line-height: 17px;
+  Margin-bottom: 17px;
+}
+.footer div a {
+  color: #bbbbbb;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer div a:hover {
+  text-decoration: underline !important;
+}
+.footer .divider {
+  Margin-bottom: 10px;
+}
+.footer .divider table {
+  Margin-left: auto;
+  Margin-right: auto;
+}
+.footer .divider td.spacer {
+  width: 8px;
+}
+@media only screen and (max-width: 620px) {
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td ul:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td ul:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td ul:last-child {
+    Margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .email-top,
+  [class*=wrapper] .email-bottom {
+    font-size: 28px !important;
+    line-height: 28px !important;
+  }
+  [class*=wrapper] .header,
+  [class*=wrapper] .footer {
+    width: 280px !important;
+  }
+  [class*=wrapper] .logo img {
+    max-width: 280px!important;
+    height: auto!important;
+  }
+  [class*=wrapper] blockquote {
+    border-left-width: 4px !important;
+    margin-left: 0 !important;
+    padding-left: 14px !important;
+  }
+  [class*=wrapper] h1 {
+    font-size: 32px !important;
+    line-height: 42px !important;
+    margin-bottom: 24px !important;
+  }
+  [class*=wrapper] h2 {
+    font-size: 22px !important;
+    line-height: 30px !important;
+    margin-bottom: 16px !important;
+  }
+  [class*=wrapper] h3 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+    margin-bottom: 12px !important;
+  }
+  [class*=wrapper] .one-col p,
+  [class*=wrapper] .two-col p,
+  [class*=wrapper] .three-col p,
+  [class*=wrapper] .one-col ol,
+  [class*=wrapper] .two-col ol,
+  [class*=wrapper] .three-col ol,
+  [class*=wrapper] .one-col ul,
+  [class*=wrapper] .two-col ul,
+  [class*=wrapper] .three-col ul {
+    font-size: 17px !important;
+    line-height: 27px !important;
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] ol {
+    margin-left: 24px !important;
+  }
+  [class*=wrapper] ol li {
+    padding-left: 4px !important;
+  }
+  [class*=wrapper] ul {
+    margin-left: 19px !important;
+  }
+  [class*=wrapper] ul li {
+    padding-left: 9px !important;
+  }
+  [class*=wrapper] li {
+    margin-bottom: 14px !important;
+  }
+  [class*=wrapper] .divider {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .btn {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .btn a {
+    display: block !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    padding: 12px 24px !important;
+  }
+  [class*=wrapper] .column-bottom {
+    font-size: 3px !important;
+    line-height: 3px !important;
+  }
+  [class*=wrapper] .first .column-bottom,
+  [class*=wrapper] .second .column-top,
+  [class*=wrapper] .three-col .second .column-bottom,
+  [class*=wrapper] .third .column-top {
+    display: none;
+  }
+  [class*=wrapper] .show {
+    display: block!important;
+    font-size: 1px;
+    line-height: 1px;
+  }
+  [class*=wrapper] .hide {
+    display: none!important;
+  }
+}
+</style>
+    <!--[if mso]>
+    <style>
+      .spacer, .column-top, .column-bottom {
+        mso-line-height-rule: exactly;
+      }
+    </style>
+    <![endif]-->
+    <meta name="robots" content="noindex,nofollow" />
+    <meta property="og:title" content="My First Campaign" />
+  </head>
+  <body class="emb-font-stack-default" bgcolor="#fefefe">
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <div class="email-top" style="font-size: 54px;line-height: 54px">&nbsp;</div>
+            <table class="header" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 560px">
+              <tbody><tr>
+                <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;color: #aaaaaa;font-size: 24px;font-family: Georgia, serif" align="left">
+                  <table style="border-collapse: collapse;border-spacing: 0">
+                    <tbody><tr>
+                      <td class="logo" style="padding-top: 0;padding-bottom: 27px;padding-left: 0;padding-right: 0;vertical-align: top;color: #202020;font-size: 32px;font-weight: bold;line-height: 42px;font-family: Georgia, serif" align="left" id="emb-email-header"><img alt="TypoSpy" height="128" src="/assets/spy-icon-128.png" style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 128px" width="128" /></td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+    
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="one-col" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 600px">
+              <tbody><tr>
+                <td class="column" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638">
+                  <div><div class="column-top" style="font-size: 20px;line-height: 20px">&nbsp;</div></div>
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <h1 style="Margin-top: 0;font-weight: 400;font-family: Georgia, serif;font-size: 32px;line-height: 42px;Margin-bottom: 24px">Start designing your email</h1><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 27px;font-size: 17px;line-height: 27px">Add new pieces of content like text, images and buttons to your email by dragging the tiles on the left where you want them to go.</p><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 27px;font-size: 17px;line-height: 27px">Add different layouts to your email by clicking on the green <strong style="font-weight: bold">Add layout</strong> button below.</p>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <div style="height:20px">&nbsp;</div>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 27px">
+                          <span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span>
+                        </center>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 3px;line-height: 3px">&nbsp;</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="two-col" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 600px">
+              <tbody><tr>
+                <td class="column first" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638;width: 300px">
+
+                  <div class="image" style="font-size: 0;Margin-bottom: 24px" align="center">
+                    <img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 128px" src="images/spy-icon-1281.png" alt="" width="128" height="128" />
+                  </div>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 24px">
+                          <span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span>
+                        </center>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 24px;font-size: 15px;line-height: 24px">Ut adi piscing rutrum tellus non laoreet. Proin lectus sem, vesti bulum tincidunt laoreet sed.</p>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 6px;line-height: 6px">&nbsp;</div>
+                </td>
+                <td class="column second" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638;width: 300px">
+                  <div><div class="column-top" style="font-size: 20px;line-height: 20px">&nbsp;</div></div>
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <h1 style="Margin-top: 0;font-weight: 400;font-family: Georgia, serif;font-size: 28px;line-height: 36px;Margin-bottom: 20px">Article</h1><blockquote style="Margin-top: 0;Margin-right: 0;Margin-bottom: 0;padding-right: 0;font-style: italic;border-left-color: #808080;border-left-style: solid;border-left-width: 3px;color: #808080;Margin-left: 0;padding-left: 15px"><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 24px;font-size: 15px;line-height: 24px">Mauris ut ipsum ac ligula commodo bib endum. Curabitur rutrum sapien tellus, et mattis est mollis. Pellen tesque suscipit vel nisi et viverra placerat.</p></blockquote>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 6px;line-height: 6px">&nbsp;</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="footer" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 560px">
+              <tbody><tr>
+                <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top" align="center">
+                  <div class="column-top" style="font-size: 11px;line-height: 17px;color: #bbbbbb;Margin-bottom: 17px;font-family: Georgia, serif">&nbsp;</div>
+                  <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 10px">
+                    <table style="border-collapse: collapse;border-spacing: 0;Margin-bottom: 27px;Margin-left: auto;Margin-right: auto">
+                      <tbody><tr>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                        <td class="spacer" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;font-size: 1px;line-height: 1px;width: 8px">&nbsp;</td>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                        <td class="spacer" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;font-size: 1px;line-height: 1px;width: 8px">&nbsp;</td>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                      </tr>
+                    </tbody></table>
+                  </center>
+                  <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">You're receiving this email because you produce content and sometimes typos, misspellings, and grammatical errors slip through your editors. But that's fine! We're hear to help!<br />
+                    <br />
+                    Grammatical errors diminish the value of your content and can erode consumer confidence in your publication. We have thousands of dedicated grammar nerds scouring your site to find any slip ups! We'll notify you as soon as one of our attentive members spots an error on your site, so you can correct it super quickly.<br />
+                    <br />
+                    If you're interested in learning more, visit the Typo Spy site or contact us!&nbsp;</div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">
+                      <span>No Images? <webversion style="color: #bbbbbb;">Click here</webversion></span>
+
+
+                      <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+                      <unsubscribe>Unsubscribe</unsubscribe>
+                    </div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">Copyright &#169; 2014 Typo Spy</div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">
+                      <span><fblike>Like</fblike></span>
+                      <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+                      <span><tweet>Tweet</tweet></span>
+
+
+                    </div>
+                  </td>
+                </tr>
+              </tbody></table>
+              <div class="email-bottom" style="font-size: 54px;line-height: 54px">&nbsp;</div>
+            </center>
+          </td>
+        </tr>
+      </tbody></table>
+
+    </body></html>
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mDomain Load (0.2ms)[0m  [1mSELECT  "domains".* FROM "domains"  WHERE "domains"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered typo_mailer/initial_notification.html.erb (0.3ms)
+
+TypoMailer#initial_notification: processed outbound mail in 19.1ms
+
+Sent mail to corbin.page@gmail.com (1209.6ms)
+Date: Thu, 02 Oct 2014 21:33:11 -0400
+From: Typo Notification <typo.spy@gmail.com>
+To: corbin.page@gmail.com
+Message-ID: <542dfcd798d43_326d8082dbf868611@Corbins-MacBook-Air.local.mail>
+Subject: Typo Notification
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  padding: 0;
+  vertical-align: top;
+}
+.spacer,
+.border {
+  font-size: 1px;
+  line-height: 1px;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.image {
+  font-size: 0;
+  Margin-bottom: 27px;
+}
+.image img {
+  display: block;
+}
+.logo img {
+  display: block;
+}
+strong {
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li {
+  Margin-top: 0;
+}
+ol,
+ul,
+li {
+  padding-left: 0;
+}
+.btn a {
+  mso-hide: all;
+}
+blockquote {
+  Margin-top: 0;
+  Margin-right: 0;
+  Margin-bottom: 0;
+  padding-right: 0;
+}
+.column-top {
+  font-size: 20px;
+  line-height: 20px;
+}
+.column-bottom {
+  font-size: 3px;
+  line-height: 3px;
+}
+.column {
+  text-align: left;
+}
+.contents {
+  width: 100%;
+}
+.padded {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wrapper {
+  background-color: #fefefe;
+  width: 100%;
+  min-width: 620px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+table.wrapper {
+  table-layout: fixed;
+}
+.one-col,
+.two-col,
+.three-col {
+  Margin-left: auto;
+  Margin-right: auto;
+  width: 600px;
+}
+.one-col p,
+.one-col ol,
+.one-col ul {
+  Margin-bottom: 27px;
+}
+.two-col p,
+.two-col ol,
+.two-col ul {
+  Margin-bottom: 24px;
+}
+.two-col .image {
+  Margin-bottom: 24px;
+}
+.two-col .column-bottom {
+  font-size: -4px;
+  line-height: -4px;
+}
+.two-col .column {
+  width: 300px;
+}
+.three-col p,
+.three-col ol,
+.three-col ul {
+  Margin-bottom: 21px;
+}
+.three-col .image {
+  Margin-bottom: 21px;
+}
+.three-col .column-bottom {
+  font-size: -1px;
+  line-height: -1px;
+}
+.three-col .column {
+  width: 200px;
+}
+@media only screen and (max-width: 620px) {
+  [class*=wrapper] {
+    min-width: 320px !important;
+    width: 100%!important;
+  }
+  [class*=wrapper] .one-col,
+  [class*=wrapper] .two-col,
+  [class*=wrapper] .three-col {
+    width: 320px !important;
+  }
+  [class*=wrapper] .column {
+    display: block;
+    float: left;
+    width: 320px !important;
+  }
+  [class*=wrapper] .padded {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  [class*=wrapper] .full {
+    display: none;
+  }
+  [class*=wrapper] .block {
+    display: block !important;
+  }
+  [class*=wrapper] .hide {
+    display: none !important;
+  }
+  [class*=wrapper] .image {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .image img {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+.wrapper h1 {
+  font-weight: 400;
+}
+.wrapper h2 {
+  font-weight: 700;
+}
+.wrapper h3 {
+  font-style: italic;
+  font-weight: 700;
+}
+.wrapper p,
+.wrapper ol,
+.wrapper ul {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.wrapper blockquote {
+  font-style: italic;
+}
+.two-col h2 {
+  letter-spacing: -0.028em;
+}
+.divider {
+  font-size: 4px;
+  line-height: 4px;
+}
+.contents .divider,
+.footer .divider table {
+  Margin-bottom: 27px;
+}
+.divider .bull {
+  background-color: #cccccc;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1px;
+  height: 4px;
+  line-height: 1px;
+  overflow: hidden;
+  width: 4px;
+}
+.email-top,
+.email-bottom {
+  font-size: 54px;
+  line-height: 54px;
+}
+.column {
+  color: #353638;
+}
+.btn {
+  Margin-bottom: 27px;
+}
+.wrapper .btn a {
+  border: 1px solid #888888;
+  border-radius: 5px;
+  color: #888888;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none !important;
+  transition: border-color 0.2s, color 0.2s;
+}
+.wrapper .btn a:hover {
+  border-color: #353638 !important;
+  color: #353638 !important;
+}
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper p,
+.wrapper ol,
+.wrapper ul,
+.wrapper .btn a,
+.wrapper .header td,
+.wrapper .header .logo,
+.wrapper .footer div {
+  font-family: Georgia, serif;
+}
+@media screen and (min-width: 0) {
+  .wrapper h1,
+  .wrapper h2,
+  .wrapper h3,
+  .wrapper p,
+  .wrapper ol,
+  .wrapper ul,
+  .wrapper .btn a,
+  .wrapper .header td,
+  .wrapper .header .logo,
+  .wrapper .footer div {
+    font-family: Merriweather, Georgia, serif !important;
+  }
+}
+.wrapper a {
+  color: #289fd8;
+  text-decoration: underline;
+}
+.wrapper a:hover {
+  text-decoration: none !important;
+}
+.wrapper h1 {
+  font-size: 32px;
+  line-height: 42px;
+  Margin-bottom: 24px;
+}
+.wrapper h2 {
+  font-size: 22px;
+  line-height: 30px;
+  Margin-bottom: 16px;
+}
+.wrapper h3 {
+  font-size: 18px;
+  line-height: 26px;
+  Margin-bottom: 12px;
+}
+.wrapper h1 a,
+.wrapper h2 a,
+.wrapper h3 a {
+  color: #353638;
+  text-decoration: none;
+}
+.wrapper p,
+.wrapper ol,
+.wrapper ul {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.wrapper li {
+  Margin-bottom: 14px;
+}
+.wrapper ol {
+  Margin-left: 24px;
+}
+.wrapper ol li {
+  padding-left: 4px;
+}
+.wrapper ul {
+  margin-left: 18px;
+}
+.wrapper ul li {
+  padding-left: 9px;
+}
+.wrapper blockquote {
+  border-left: 4px solid #808080;
+  color: #808080;
+  Margin-left: 0;
+  padding-left: 17px;
+}
+.one-col .column table:nth-last-child(2) td h1:last-child,
+.one-col .column table:nth-last-child(2) td h2:last-child,
+.one-col .column table:nth-last-child(2) td h3:last-child,
+.one-col .column table:nth-last-child(2) td p:last-child,
+.one-col .column table:nth-last-child(2) td ol:last-child,
+.one-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 27px;
+}
+.one-col p,
+.one-col ol,
+.one-col ul {
+  font-size: 17px;
+  line-height: 27px;
+}
+.two-col .column table:nth-last-child(2) td h1:last-child,
+.two-col .column table:nth-last-child(2) td h2:last-child,
+.two-col .column table:nth-last-child(2) td h3:last-child,
+.two-col .column table:nth-last-child(2) td p:last-child,
+.two-col .column table:nth-last-child(2) td ol:last-child,
+.two-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 24px;
+}
+.two-col .column-bottom {
+  font-size: 6px;
+  line-height: 6px;
+}
+.two-col h1 {
+  font-size: 28px;
+  line-height: 36px;
+  Margin-bottom: 20px;
+}
+.two-col h2 {
+  font-size: 22px;
+  line-height: 30px;
+  Margin-bottom: 14px;
+}
+.two-col h3 {
+  font-size: 16px;
+  line-height: 24px;
+  Margin-bottom: 10px;
+}
+.two-col p,
+.two-col ol,
+.two-col ul {
+  font-size: 15px;
+  line-height: 24px;
+}
+.two-col ol {
+  Margin-left: 21px;
+}
+.two-col ol li {
+  padding-left: 3px;
+}
+.two-col ul {
+  Margin-left: 18px;
+}
+.two-col ul li {
+  padding-left: 6px;
+}
+.two-col li {
+  Margin-bottom: 12px;
+}
+.two-col .divider {
+  Margin-bottom: 24px;
+}
+.two-col blockquote {
+  border-left-width: 3px;
+  padding-left: 15px;
+}
+.two-col .btn {
+  Margin-bottom: 24px;
+}
+.two-col .btn a {
+  font-size: 13px;
+  line-height: 21px;
+  padding: 10px 18px;
+}
+.three-col .column table:nth-last-child(2) td h1:last-child,
+.three-col .column table:nth-last-child(2) td h2:last-child,
+.three-col .column table:nth-last-child(2) td h3:last-child,
+.three-col .column table:nth-last-child(2) td p:last-child,
+.three-col .column table:nth-last-child(2) td ol:last-child,
+.three-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 21px;
+}
+.three-col .column-bottom {
+  font-size: 9px;
+  line-height: 9px;
+}
+.three-col h1 {
+  font-size: 24px;
+  line-height: 32px;
+  Margin-bottom: 16px;
+}
+.three-col h2 {
+  font-size: 16px;
+  line-height: 24px;
+  Margin-bottom: 12px;
+}
+.three-col h3 {
+  font-size: 14px;
+  line-height: 22px;
+  Margin-bottom: 8px;
+}
+.three-col p,
+.three-col ol,
+.three-col ul {
+  font-size: 13px;
+  line-height: 21px;
+}
+.three-col ul {
+  Margin-left: 16px;
+}
+.three-col ul li {
+  padding-left: 6px;
+}
+.three-col ol {
+  Margin-left: 18px;
+}
+.three-col ol li {
+  padding-left: 4px;
+}
+.three-col li {
+  Margin-bottom: 10px;
+}
+.three-col .divider {
+  Margin-bottom: 21px;
+}
+.three-col blockquote {
+  border-left-width: 2px;
+  padding-left: 13px;
+}
+.three-col .btn {
+  Margin-bottom: 21px;
+}
+.three-col .btn a {
+  font-size: 11px;
+  line-height: 19px;
+  padding: 8px 14px;
+}
+.header,
+.footer {
+  Margin-left: auto;
+  Margin-right: auto;
+  width: 560px;
+}
+.header td {
+  color: #aaaaaa;
+  font-size: 24px;
+}
+.header .logo {
+  padding-bottom: 27px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: #202020;
+}
+.header .logo a {
+  text-decoration: none;
+  color: #202020;
+}
+.footer div {
+  color: #bbbbbb;
+  font-size: 11px;
+  line-height: 17px;
+  Margin-bottom: 17px;
+}
+.footer div a {
+  color: #bbbbbb;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer div a:hover {
+  text-decoration: underline !important;
+}
+.footer .divider {
+  Margin-bottom: 10px;
+}
+.footer .divider table {
+  Margin-left: auto;
+  Margin-right: auto;
+}
+.footer .divider td.spacer {
+  width: 8px;
+}
+@media only screen and (max-width: 620px) {
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td ul:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td ul:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td ul:last-child {
+    Margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .email-top,
+  [class*=wrapper] .email-bottom {
+    font-size: 28px !important;
+    line-height: 28px !important;
+  }
+  [class*=wrapper] .header,
+  [class*=wrapper] .footer {
+    width: 280px !important;
+  }
+  [class*=wrapper] .logo img {
+    max-width: 280px!important;
+    height: auto!important;
+  }
+  [class*=wrapper] blockquote {
+    border-left-width: 4px !important;
+    margin-left: 0 !important;
+    padding-left: 14px !important;
+  }
+  [class*=wrapper] h1 {
+    font-size: 32px !important;
+    line-height: 42px !important;
+    margin-bottom: 24px !important;
+  }
+  [class*=wrapper] h2 {
+    font-size: 22px !important;
+    line-height: 30px !important;
+    margin-bottom: 16px !important;
+  }
+  [class*=wrapper] h3 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+    margin-bottom: 12px !important;
+  }
+  [class*=wrapper] .one-col p,
+  [class*=wrapper] .two-col p,
+  [class*=wrapper] .three-col p,
+  [class*=wrapper] .one-col ol,
+  [class*=wrapper] .two-col ol,
+  [class*=wrapper] .three-col ol,
+  [class*=wrapper] .one-col ul,
+  [class*=wrapper] .two-col ul,
+  [class*=wrapper] .three-col ul {
+    font-size: 17px !important;
+    line-height: 27px !important;
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] ol {
+    margin-left: 24px !important;
+  }
+  [class*=wrapper] ol li {
+    padding-left: 4px !important;
+  }
+  [class*=wrapper] ul {
+    margin-left: 19px !important;
+  }
+  [class*=wrapper] ul li {
+    padding-left: 9px !important;
+  }
+  [class*=wrapper] li {
+    margin-bottom: 14px !important;
+  }
+  [class*=wrapper] .divider {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .btn {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .btn a {
+    display: block !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    padding: 12px 24px !important;
+  }
+  [class*=wrapper] .column-bottom {
+    font-size: 3px !important;
+    line-height: 3px !important;
+  }
+  [class*=wrapper] .first .column-bottom,
+  [class*=wrapper] .second .column-top,
+  [class*=wrapper] .three-col .second .column-bottom,
+  [class*=wrapper] .third .column-top {
+    display: none;
+  }
+  [class*=wrapper] .show {
+    display: block!important;
+    font-size: 1px;
+    line-height: 1px;
+  }
+  [class*=wrapper] .hide {
+    display: none!important;
+  }
+}
+</style>
+    <!--[if mso]>
+    <style>
+      .spacer, .column-top, .column-bottom {
+        mso-line-height-rule: exactly;
+      }
+    </style>
+    <![endif]-->
+    <meta name="robots" content="noindex,nofollow" />
+    <meta property="og:title" content="My First Campaign" />
+  </head>
+  <body class="emb-font-stack-default" bgcolor="#fefefe">
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <div class="email-top" style="font-size: 54px;line-height: 54px">&nbsp;</div>
+            <table class="header" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 560px">
+              <tbody><tr>
+                <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;color: #aaaaaa;font-size: 24px;font-family: Georgia, serif" align="left">
+                  <table style="border-collapse: collapse;border-spacing: 0">
+                    <tbody><tr>
+                      <td class="logo" style="padding-top: 0;padding-bottom: 27px;padding-left: 0;padding-right: 0;vertical-align: top;color: #202020;font-size: 32px;font-weight: bold;line-height: 42px;font-family: Georgia, serif" align="left" id="emb-email-header"><img alt="TypoSpy" height="128" src="/assets/spy-icon-128.png" style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 128px" width="128" /></td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+    
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="one-col" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 600px">
+              <tbody><tr>
+                <td class="column" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638">
+                  <div><div class="column-top" style="font-size: 20px;line-height: 20px">&nbsp;</div></div>
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <h1 style="Margin-top: 0;font-weight: 400;font-family: Georgia, serif;font-size: 32px;line-height: 42px;Margin-bottom: 24px">Start designing your email</h1><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 27px;font-size: 17px;line-height: 27px">Add new pieces of content like text, images and buttons to your email by dragging the tiles on the left where you want them to go.</p><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 27px;font-size: 17px;line-height: 27px">Add different layouts to your email by clicking on the green <strong style="font-weight: bold">Add layout</strong> button below.</p>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <div style="height:20px">&nbsp;</div>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 27px">
+                          <span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span>
+                        </center>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 3px;line-height: 3px">&nbsp;</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="two-col" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 600px">
+              <tbody><tr>
+                <td class="column first" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638;width: 300px">
+
+                  <div class="image" style="font-size: 0;Margin-bottom: 24px" align="center">
+                    <img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 128px" src="images/spy-icon-1281.png" alt="" width="128" height="128" />
+                  </div>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 24px">
+                          <span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span>
+                        </center>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 24px;font-size: 15px;line-height: 24px">Ut adi piscing rutrum tellus non laoreet. Proin lectus sem, vesti bulum tincidunt laoreet sed.</p>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 6px;line-height: 6px">&nbsp;</div>
+                </td>
+                <td class="column second" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638;width: 300px">
+                  <div><div class="column-top" style="font-size: 20px;line-height: 20px">&nbsp;</div></div>
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <h1 style="Margin-top: 0;font-weight: 400;font-family: Georgia, serif;font-size: 28px;line-height: 36px;Margin-bottom: 20px">Article</h1><blockquote style="Margin-top: 0;Margin-right: 0;Margin-bottom: 0;padding-right: 0;font-style: italic;border-left-color: #808080;border-left-style: solid;border-left-width: 3px;color: #808080;Margin-left: 0;padding-left: 15px"><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 24px;font-size: 15px;line-height: 24px">Mauris ut ipsum ac ligula commodo bib endum. Curabitur rutrum sapien tellus, et mattis est mollis. Pellen tesque suscipit vel nisi et viverra placerat.</p></blockquote>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 6px;line-height: 6px">&nbsp;</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="footer" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 560px">
+              <tbody><tr>
+                <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top" align="center">
+                  <div class="column-top" style="font-size: 11px;line-height: 17px;color: #bbbbbb;Margin-bottom: 17px;font-family: Georgia, serif">&nbsp;</div>
+                  <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 10px">
+                    <table style="border-collapse: collapse;border-spacing: 0;Margin-bottom: 27px;Margin-left: auto;Margin-right: auto">
+                      <tbody><tr>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                        <td class="spacer" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;font-size: 1px;line-height: 1px;width: 8px">&nbsp;</td>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                        <td class="spacer" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;font-size: 1px;line-height: 1px;width: 8px">&nbsp;</td>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                      </tr>
+                    </tbody></table>
+                  </center>
+                  <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">You're receiving this email because you produce content and sometimes typos, misspellings, and grammatical errors slip through your editors. But that's fine! We're hear to help!<br />
+                    <br />
+                    Grammatical errors diminish the value of your content and can erode consumer confidence in your publication. We have thousands of dedicated grammar nerds scouring your site to find any slip ups! We'll notify you as soon as one of our attentive members spots an error on your site, so you can correct it super quickly.<br />
+                    <br />
+                    If you're interested in learning more, visit the Typo Spy site or contact us!&nbsp;</div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">
+                      <span>No Images? <webversion style="color: #bbbbbb;">Click here</webversion></span>
+
+
+                      <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+                      <unsubscribe>Unsubscribe</unsubscribe>
+                    </div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">Copyright &#169; 2014 Typo Spy</div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">
+                      <span><fblike>Like</fblike></span>
+                      <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+                      <span><tweet>Tweet</tweet></span>
+
+
+                    </div>
+                  </td>
+                </tr>
+              </tbody></table>
+              <div class="email-bottom" style="font-size: 54px;line-height: 54px">&nbsp;</div>
+            </center>
+          </td>
+        </tr>
+      </tbody></table>
+
+    </body></html>
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[36mTypo Load (0.2ms)[0m  [1mSELECT "typos".* FROM "typos"  WHERE "typos"."status" = 'READY_FOR_EMAIL'[0m
+  [1m[35mDomain Load (0.2ms)[0m  SELECT  "domains".* FROM "domains"  WHERE "domains"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered typo_mailer/initial_notification.html.erb (17.2ms)
+
+TypoMailer#initial_notification: processed outbound mail in 215.9ms
+
+Sent mail to corbin.page@gmail.com (7340.0ms)
+Date: Thu, 02 Oct 2014 21:39:39 -0400
+From: Typo Notifier <typo.spy@gmail.com>
+To: corbin.page@gmail.com
+Message-ID: <542dfe5b6fd1b_32898082dbf888793@Corbins-MacBook-Air.local.mail>
+Subject: Typo Notification
+Mime-Version: 1.0
+Content-Type: multipart/related;
+ boundary="--==_mimepart_542dfe5b63bca_32898082dbf888696";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_542dfe5b63bca_32898082dbf888696
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  padding: 0;
+  vertical-align: top;
+}
+.spacer,
+.border {
+  font-size: 1px;
+  line-height: 1px;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.image {
+  font-size: 0;
+  Margin-bottom: 27px;
+}
+.image img {
+  display: block;
+}
+.logo img {
+  display: block;
+}
+strong {
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li {
+  Margin-top: 0;
+}
+ol,
+ul,
+li {
+  padding-left: 0;
+}
+.btn a {
+  mso-hide: all;
+}
+blockquote {
+  Margin-top: 0;
+  Margin-right: 0;
+  Margin-bottom: 0;
+  padding-right: 0;
+}
+.column-top {
+  font-size: 20px;
+  line-height: 20px;
+}
+.column-bottom {
+  font-size: 3px;
+  line-height: 3px;
+}
+.column {
+  text-align: left;
+}
+.contents {
+  width: 100%;
+}
+.padded {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wrapper {
+  background-color: #fefefe;
+  width: 100%;
+  min-width: 620px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+table.wrapper {
+  table-layout: fixed;
+}
+.one-col,
+.two-col,
+.three-col {
+  Margin-left: auto;
+  Margin-right: auto;
+  width: 600px;
+}
+.one-col p,
+.one-col ol,
+.one-col ul {
+  Margin-bottom: 27px;
+}
+.two-col p,
+.two-col ol,
+.two-col ul {
+  Margin-bottom: 24px;
+}
+.two-col .image {
+  Margin-bottom: 24px;
+}
+.two-col .column-bottom {
+  font-size: -4px;
+  line-height: -4px;
+}
+.two-col .column {
+  width: 300px;
+}
+.three-col p,
+.three-col ol,
+.three-col ul {
+  Margin-bottom: 21px;
+}
+.three-col .image {
+  Margin-bottom: 21px;
+}
+.three-col .column-bottom {
+  font-size: -1px;
+  line-height: -1px;
+}
+.three-col .column {
+  width: 200px;
+}
+@media only screen and (max-width: 620px) {
+  [class*=wrapper] {
+    min-width: 320px !important;
+    width: 100%!important;
+  }
+  [class*=wrapper] .one-col,
+  [class*=wrapper] .two-col,
+  [class*=wrapper] .three-col {
+    width: 320px !important;
+  }
+  [class*=wrapper] .column {
+    display: block;
+    float: left;
+    width: 320px !important;
+  }
+  [class*=wrapper] .padded {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  [class*=wrapper] .full {
+    display: none;
+  }
+  [class*=wrapper] .block {
+    display: block !important;
+  }
+  [class*=wrapper] .hide {
+    display: none !important;
+  }
+  [class*=wrapper] .image {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .image img {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+.wrapper h1 {
+  font-weight: 400;
+}
+.wrapper h2 {
+  font-weight: 700;
+}
+.wrapper h3 {
+  font-style: italic;
+  font-weight: 700;
+}
+.wrapper p,
+.wrapper ol,
+.wrapper ul {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.wrapper blockquote {
+  font-style: italic;
+}
+.two-col h2 {
+  letter-spacing: -0.028em;
+}
+.divider {
+  font-size: 4px;
+  line-height: 4px;
+}
+.contents .divider,
+.footer .divider table {
+  Margin-bottom: 27px;
+}
+.divider .bull {
+  background-color: #cccccc;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1px;
+  height: 4px;
+  line-height: 1px;
+  overflow: hidden;
+  width: 4px;
+}
+.email-top,
+.email-bottom {
+  font-size: 54px;
+  line-height: 54px;
+}
+.column {
+  color: #353638;
+}
+.btn {
+  Margin-bottom: 27px;
+}
+.wrapper .btn a {
+  border: 1px solid #888888;
+  border-radius: 5px;
+  color: #888888;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none !important;
+  transition: border-color 0.2s, color 0.2s;
+}
+.wrapper .btn a:hover {
+  border-color: #353638 !important;
+  color: #353638 !important;
+}
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper p,
+.wrapper ol,
+.wrapper ul,
+.wrapper .btn a,
+.wrapper .header td,
+.wrapper .header .logo,
+.wrapper .footer div {
+  font-family: Georgia, serif;
+}
+@media screen and (min-width: 0) {
+  .wrapper h1,
+  .wrapper h2,
+  .wrapper h3,
+  .wrapper p,
+  .wrapper ol,
+  .wrapper ul,
+  .wrapper .btn a,
+  .wrapper .header td,
+  .wrapper .header .logo,
+  .wrapper .footer div {
+    font-family: Merriweather, Georgia, serif !important;
+  }
+}
+.wrapper a {
+  color: #289fd8;
+  text-decoration: underline;
+}
+.wrapper a:hover {
+  text-decoration: none !important;
+}
+.wrapper h1 {
+  font-size: 32px;
+  line-height: 42px;
+  Margin-bottom: 24px;
+}
+.wrapper h2 {
+  font-size: 22px;
+  line-height: 30px;
+  Margin-bottom: 16px;
+}
+.wrapper h3 {
+  font-size: 18px;
+  line-height: 26px;
+  Margin-bottom: 12px;
+}
+.wrapper h1 a,
+.wrapper h2 a,
+.wrapper h3 a {
+  color: #353638;
+  text-decoration: none;
+}
+.wrapper p,
+.wrapper ol,
+.wrapper ul {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.wrapper li {
+  Margin-bottom: 14px;
+}
+.wrapper ol {
+  Margin-left: 24px;
+}
+.wrapper ol li {
+  padding-left: 4px;
+}
+.wrapper ul {
+  margin-left: 18px;
+}
+.wrapper ul li {
+  padding-left: 9px;
+}
+.wrapper blockquote {
+  border-left: 4px solid #808080;
+  color: #808080;
+  Margin-left: 0;
+  padding-left: 17px;
+}
+.one-col .column table:nth-last-child(2) td h1:last-child,
+.one-col .column table:nth-last-child(2) td h2:last-child,
+.one-col .column table:nth-last-child(2) td h3:last-child,
+.one-col .column table:nth-last-child(2) td p:last-child,
+.one-col .column table:nth-last-child(2) td ol:last-child,
+.one-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 27px;
+}
+.one-col p,
+.one-col ol,
+.one-col ul {
+  font-size: 17px;
+  line-height: 27px;
+}
+.two-col .column table:nth-last-child(2) td h1:last-child,
+.two-col .column table:nth-last-child(2) td h2:last-child,
+.two-col .column table:nth-last-child(2) td h3:last-child,
+.two-col .column table:nth-last-child(2) td p:last-child,
+.two-col .column table:nth-last-child(2) td ol:last-child,
+.two-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 24px;
+}
+.two-col .column-bottom {
+  font-size: 6px;
+  line-height: 6px;
+}
+.two-col h1 {
+  font-size: 28px;
+  line-height: 36px;
+  Margin-bottom: 20px;
+}
+.two-col h2 {
+  font-size: 22px;
+  line-height: 30px;
+  Margin-bottom: 14px;
+}
+.two-col h3 {
+  font-size: 16px;
+  line-height: 24px;
+  Margin-bottom: 10px;
+}
+.two-col p,
+.two-col ol,
+.two-col ul {
+  font-size: 15px;
+  line-height: 24px;
+}
+.two-col ol {
+  Margin-left: 21px;
+}
+.two-col ol li {
+  padding-left: 3px;
+}
+.two-col ul {
+  Margin-left: 18px;
+}
+.two-col ul li {
+  padding-left: 6px;
+}
+.two-col li {
+  Margin-bottom: 12px;
+}
+.two-col .divider {
+  Margin-bottom: 24px;
+}
+.two-col blockquote {
+  border-left-width: 3px;
+  padding-left: 15px;
+}
+.two-col .btn {
+  Margin-bottom: 24px;
+}
+.two-col .btn a {
+  font-size: 13px;
+  line-height: 21px;
+  padding: 10px 18px;
+}
+.three-col .column table:nth-last-child(2) td h1:last-child,
+.three-col .column table:nth-last-child(2) td h2:last-child,
+.three-col .column table:nth-last-child(2) td h3:last-child,
+.three-col .column table:nth-last-child(2) td p:last-child,
+.three-col .column table:nth-last-child(2) td ol:last-child,
+.three-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 21px;
+}
+.three-col .column-bottom {
+  font-size: 9px;
+  line-height: 9px;
+}
+.three-col h1 {
+  font-size: 24px;
+  line-height: 32px;
+  Margin-bottom: 16px;
+}
+.three-col h2 {
+  font-size: 16px;
+  line-height: 24px;
+  Margin-bottom: 12px;
+}
+.three-col h3 {
+  font-size: 14px;
+  line-height: 22px;
+  Margin-bottom: 8px;
+}
+.three-col p,
+.three-col ol,
+.three-col ul {
+  font-size: 13px;
+  line-height: 21px;
+}
+.three-col ul {
+  Margin-left: 16px;
+}
+.three-col ul li {
+  padding-left: 6px;
+}
+.three-col ol {
+  Margin-left: 18px;
+}
+.three-col ol li {
+  padding-left: 4px;
+}
+.three-col li {
+  Margin-bottom: 10px;
+}
+.three-col .divider {
+  Margin-bottom: 21px;
+}
+.three-col blockquote {
+  border-left-width: 2px;
+  padding-left: 13px;
+}
+.three-col .btn {
+  Margin-bottom: 21px;
+}
+.three-col .btn a {
+  font-size: 11px;
+  line-height: 19px;
+  padding: 8px 14px;
+}
+.header,
+.footer {
+  Margin-left: auto;
+  Margin-right: auto;
+  width: 560px;
+}
+.header td {
+  color: #aaaaaa;
+  font-size: 24px;
+}
+.header .logo {
+  padding-bottom: 27px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: #202020;
+}
+.header .logo a {
+  text-decoration: none;
+  color: #202020;
+}
+.footer div {
+  color: #bbbbbb;
+  font-size: 11px;
+  line-height: 17px;
+  Margin-bottom: 17px;
+}
+.footer div a {
+  color: #bbbbbb;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer div a:hover {
+  text-decoration: underline !important;
+}
+.footer .divider {
+  Margin-bottom: 10px;
+}
+.footer .divider table {
+  Margin-left: auto;
+  Margin-right: auto;
+}
+.footer .divider td.spacer {
+  width: 8px;
+}
+@media only screen and (max-width: 620px) {
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td ul:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td ul:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td ul:last-child {
+    Margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .email-top,
+  [class*=wrapper] .email-bottom {
+    font-size: 28px !important;
+    line-height: 28px !important;
+  }
+  [class*=wrapper] .header,
+  [class*=wrapper] .footer {
+    width: 280px !important;
+  }
+  [class*=wrapper] .logo img {
+    max-width: 280px!important;
+    height: auto!important;
+  }
+  [class*=wrapper] blockquote {
+    border-left-width: 4px !important;
+    margin-left: 0 !important;
+    padding-left: 14px !important;
+  }
+  [class*=wrapper] h1 {
+    font-size: 32px !important;
+    line-height: 42px !important;
+    margin-bottom: 24px !important;
+  }
+  [class*=wrapper] h2 {
+    font-size: 22px !important;
+    line-height: 30px !important;
+    margin-bottom: 16px !important;
+  }
+  [class*=wrapper] h3 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+    margin-bottom: 12px !important;
+  }
+  [class*=wrapper] .one-col p,
+  [class*=wrapper] .two-col p,
+  [class*=wrapper] .three-col p,
+  [class*=wrapper] .one-col ol,
+  [class*=wrapper] .two-col ol,
+  [class*=wrapper] .three-col ol,
+  [class*=wrapper] .one-col ul,
+  [class*=wrapper] .two-col ul,
+  [class*=wrapper] .three-col ul {
+    font-size: 17px !important;
+    line-height: 27px !important;
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] ol {
+    margin-left: 24px !important;
+  }
+  [class*=wrapper] ol li {
+    padding-left: 4px !important;
+  }
+  [class*=wrapper] ul {
+    margin-left: 19px !important;
+  }
+  [class*=wrapper] ul li {
+    padding-left: 9px !important;
+  }
+  [class*=wrapper] li {
+    margin-bottom: 14px !important;
+  }
+  [class*=wrapper] .divider {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .btn {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .btn a {
+    display: block !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    padding: 12px 24px !important;
+  }
+  [class*=wrapper] .column-bottom {
+    font-size: 3px !important;
+    line-height: 3px !important;
+  }
+  [class*=wrapper] .first .column-bottom,
+  [class*=wrapper] .second .column-top,
+  [class*=wrapper] .three-col .second .column-bottom,
+  [class*=wrapper] .third .column-top {
+    display: none;
+  }
+  [class*=wrapper] .show {
+    display: block!important;
+    font-size: 1px;
+    line-height: 1px;
+  }
+  [class*=wrapper] .hide {
+    display: none!important;
+  }
+}
+</style>
+    <!--[if mso]>
+    <style>
+      .spacer, .column-top, .column-bottom {
+        mso-line-height-rule: exactly;
+      }
+    </style>
+    <![endif]-->
+    <meta name="robots" content="noindex,nofollow" />
+    <meta property="og:title" content="My First Campaign" />
+  </head>
+  <body class="emb-font-stack-default" bgcolor="#fefefe">
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <div class="email-top" style="font-size: 54px;line-height: 54px">&nbsp;</div>
+            <table class="header" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 560px">
+              <tbody><tr>
+                <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;color: #aaaaaa;font-size: 24px;font-family: Georgia, serif" align="left">
+                  <table style="border-collapse: collapse;border-spacing: 0">
+                    <tbody><tr>
+                      <td class="logo" style="padding-top: 0;padding-bottom: 27px;padding-left: 0;padding-right: 0;vertical-align: top;color: #202020;font-size: 32px;font-weight: bold;line-height: 42px;font-family: Georgia, serif" align="left" id="emb-email-header"><img alt="TypoSpy" height="128" src="cid:542dfe5b416ef_32898082dbf8885b7@Corbins-MacBook-Air.local.mail" style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 128px" width="128" /></td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+    
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="one-col" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 600px">
+              <tbody><tr>
+                <td class="column" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638">
+                  <div><div class="column-top" style="font-size: 20px;line-height: 20px">&nbsp;</div></div>
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <h1 style="Margin-top: 0;font-weight: 400;font-family: Georgia, serif;font-size: 32px;line-height: 42px;Margin-bottom: 24px">Start designing your email</h1><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 27px;font-size: 17px;line-height: 27px">Add new pieces of content like text, images and buttons to your email by dragging the tiles on the left where you want them to go.</p><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 27px;font-size: 17px;line-height: 27px">Add different layouts to your email by clicking on the green <strong style="font-weight: bold">Add layout</strong> button below.</p>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <div style="height:20px">&nbsp;</div>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 27px">
+                          <span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span>
+                        </center>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 3px;line-height: 3px">&nbsp;</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="two-col" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 600px">
+              <tbody><tr>
+                <td class="column first" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638;width: 300px">
+
+                  <div class="image" style="font-size: 0;Margin-bottom: 24px" align="center">
+                    <img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 128px" src="images/spy-icon-1281.png" alt="" width="128" height="128" />
+                  </div>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 24px">
+                          <span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span>
+                        </center>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 24px;font-size: 15px;line-height: 24px">Ut adi piscing rutrum tellus non laoreet. Proin lectus sem, vesti bulum tincidunt laoreet sed.</p>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 6px;line-height: 6px">&nbsp;</div>
+                </td>
+                <td class="column second" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638;width: 300px">
+                  <div><div class="column-top" style="font-size: 20px;line-height: 20px">&nbsp;</div></div>
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <h1 style="Margin-top: 0;font-weight: 400;font-family: Georgia, serif;font-size: 28px;line-height: 36px;Margin-bottom: 20px">Article</h1><blockquote style="Margin-top: 0;Margin-right: 0;Margin-bottom: 0;padding-right: 0;font-style: italic;border-left-color: #808080;border-left-style: solid;border-left-width: 3px;color: #808080;Margin-left: 0;padding-left: 15px"><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 24px;font-size: 15px;line-height: 24px">Mauris ut ipsum ac ligula commodo bib endum. Curabitur rutrum sapien tellus, et mattis est mollis. Pellen tesque suscipit vel nisi et viverra placerat.</p></blockquote>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 6px;line-height: 6px">&nbsp;</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="footer" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 560px">
+              <tbody><tr>
+                <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top" align="center">
+                  <div class="column-top" style="font-size: 11px;line-height: 17px;color: #bbbbbb;Margin-bottom: 17px;font-family: Georgia, serif">&nbsp;</div>
+                  <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 10px">
+                    <table style="border-collapse: collapse;border-spacing: 0;Margin-bottom: 27px;Margin-left: auto;Margin-right: auto">
+                      <tbody><tr>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                        <td class="spacer" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;font-size: 1px;line-height: 1px;width: 8px">&nbsp;</td>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                        <td class="spacer" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;font-size: 1px;line-height: 1px;width: 8px">&nbsp;</td>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                      </tr>
+                    </tbody></table>
+                  </center>
+                  <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">You're receiving this email because you produce content and sometimes typos, misspellings, and grammatical errors slip through your editors. But that's fine! We're hear to help!<br />
+                    <br />
+                    Grammatical errors diminish the value of your content and can erode consumer confidence in your publication. We have thousands of dedicated grammar nerds scouring your site to find any slip ups! We'll notify you as soon as one of our attentive members spots an error on your site, so you can correct it super quickly.<br />
+                    <br />
+                    If you're interested in learning more, visit the Typo Spy site or contact us!&nbsp;</div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">
+                      <span>No Images? <webversion style="color: #bbbbbb;">Click here</webversion></span>
+
+
+                      <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+                      <unsubscribe>Unsubscribe</unsubscribe>
+                    </div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">Copyright &#169; 2014 Typo Spy</div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">
+                      <span><fblike>Like</fblike></span>
+                      <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+                      <span><tweet>Tweet</tweet></span>
+
+
+                    </div>
+                  </td>
+                </tr>
+              </tbody></table>
+              <div class="email-bottom" style="font-size: 54px;line-height: 54px">&nbsp;</div>
+            </center>
+          </td>
+        </tr>
+      </tbody></table>
+
+    </body></html>
+----==_mimepart_542dfe5b63bca_32898082dbf888696
+Content-Type: image/png;
+ charset=UTF-8;
+ filename=spy-icon-128.png
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+ filename=spy-icon-128.png
+Content-ID: <542dfe5b416ef_32898082dbf8885b7@Corbins-MacBook-Air.local.mail>
+
+iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAGKElEQVR42u2d
+623jOBCAU4JL8O8ACZSkgEsH6w7OHaw7SDrwdhB3cOog7iDqwO7A28EdJ0cD
+Op0ljsSHKOkbgNhgI+vB+Ticl5y7OwRBEARBkIYURbF+eXn5+fz8/NfT09OX
++flvRvghc/v4+LiX+c5G8UbpHygn/RAQxlb+xowLyhjXIhgdrMZQ/hYFLBQC
+WflM/EIhkD0fs79gCMwFDkz2QiGwoR4TvVQIzEl3roubY842OljfIV5yY263
+o0JgTlwqlL9CdXEA6Bt9BYfAleGTlY/a4gIwKgQK88/qTwDAaBC4LoTK0gEw
+CgS5AyCO58PDww/z797cz+d1mIe/1CbiUv+dHGs/s54aAMkhyA0AeRgz/rQV
+yFOA8Okk55Jz5rCdaec3GQS5AGAe4FUqkPWVHSGWvsg15Fq5A5AMgrEBkJUZ
+YqUPsQxy7ZwBSALBWADYFT96k4ncQ0qLMGR+o0KQGgCbev7MMN36mcJpHDq/
+0SBICYA8RMw9PoSPEDvx5TO/USBIAYDcyNAWM/MglRlHO86JtoWPWBGD7/wG
+hyA2ALa/8GuA4o/ms8WN8xXyu0S+wSo3AIJDEBMAq6zLAOUfFDWMQ6ItocgN
+gKAQxAJAo3yzyn6b8atxs6rqoxzjuyXIteUeUkIQeIH5QxADAI3yZW8v/pVt
+sz4eYwJaCl1be69VKggibLF+EIQGwK7Mk9bEN/sR+oRiAbqZSu2WYhNHqwAK
+q4Y+bxQIQgPgivGbK7zp0IXOZLoczcZEurqjPgMo69iYj12oELsPBFEAaO7n
+LuVbAC5D+w/kWF8nr+9Emmd891TUrvG8p5B5lj7+T1AAXO8VtO3tPh1IId5l
+GDKRPsmiW9tWKCvQF4Lv7ScEAK59v2vV+JhZ35SyRAAd1uw9lj9wqw0/ZKSh
+heDbCoQAoGuy6o5WSzx/HLIiNN3MfX2AG4CVMbYCWXnm2rfCz58pIfj2BXwB
+6PLENTF9W1bPfO7t1mdtw8g+UKLn6JNr8PHg27Yv8QkEhBAWQQOBNwBdZlhT
+Zu1aybab58PC8GYbRoL1DigtzWusqCCHl3G9AejKyysBKMZ6eM0K7gLAZUG0
+lqBlO5gGAI4tQOUsparyNbcnX+c2VP+AfTn3MEkAXE6gNGTmaAo1KWe591j5
+gA4QZEssmxnDrAFwOUuayUppBTSrvyuppS1Y5SBJAPBJBIVM6vRY/a8+FmlK
+r8slA2BoKrhHPiFUo8e7j/JjmP7ZAOCKCjTJjpiNHq5GE7k3n7wBACgbNSSe
+Tw2BS/munsUp7fujAnCN7V2dNrbnroiZ6tVsPfZev1w1g9CtYbMGQAuB7bR5
+c+QYSp+Gj65YXa6taVubqvJHBUALgeY1LfHaxYRrQkU5Ro7t8vS1r6NNXfmj
+A1CrfFVKD/3L9RbvtY9QvPH6uPb3dfkmfd5DtD2Lk/9yjNEBqDmGh57h2oe8
+4+97bTlH35dSrAWZxTejZAFAPcbWbAktlmFvV/AfMuoKsoBd/18syH7IyyjW
+5M/qO5GyAqC2JRzHLoO2vIm0vpuZZAdAw7GrMlB8pSxbv9pmjSyAlXvR3He2
+ANS3hbHKwT1fQjnlZrU0HcXZA9AM9Yb4CH32eFeI2JGd/J0hAOfZANAI16Qg
+U4awDPYcpQ0TfTp5ZQs456T8WWwBGqdRPHOpNNa+J+BYtxR2Zdd/94vvNp4J
+AAgAIACAAAACAAgAIACAZAVAbjnypYxsagEof+G1gBxz5AsC4JzLFnBGIdQC
+EKIABAAQAEAAAAEABAAQAECoBTCoBTCoBTCoBTCoBSBEAQgAIACAAAACAAgA
+IACAUAtgUAtgUAtgUAtgUAtAiAIQAEAAAAEABAAQAEAAAKEWwKAWwKAWwKAW
+wKAWgBAFIACAAAACAAgAIACAAAASAYC5/Bn1JYr83UQnAOagygHAhqmcLAAb
+h24rsQClouqEFZie8leKQl0pB+40Vaf7+/sf/CnWaZh9q6uTQq871T7BmG1B
+aX2l5sCELE75h/+YDer6yxmi6//5dS6PkTGr1b9pcyC2TNDslb91xo5sB7M1
++xt1KIFjOC+Hb1Aux4IgeYLSlTFkZKXwyupsR+4GQRAEQZBb8g/12YbL9Ar9
+BQAAAABJRU5ErkJggg==
+
+----==_mimepart_542dfe5b63bca_32898082dbf888696--
+
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36mDomain Load (0.2ms)[0m  [1mSELECT  "domains".* FROM "domains"  WHERE "domains"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered typo_mailer/initial_notification.html.erb (8.7ms)
+
+TypoMailer#initial_notification: processed outbound mail in 88.0ms
+
+Sent mail to corbin.page@gmail.com (1634.1ms)
+Date: Thu, 02 Oct 2014 21:39:46 -0400
+From: Typo Notifier <typo.spy@gmail.com>
+To: corbin.page@gmail.com
+Message-ID: <542dfe62d83be_32898082dbf8890cd@Corbins-MacBook-Air.local.mail>
+Subject: Typo Notification
+Mime-Version: 1.0
+Content-Type: multipart/related;
+ boundary="--==_mimepart_542dfe62cdade_32898082dbf8889dd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_542dfe62cdade_32898082dbf8889dd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td {
+  padding: 0;
+  vertical-align: top;
+}
+.spacer,
+.border {
+  font-size: 1px;
+  line-height: 1px;
+}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.image {
+  font-size: 0;
+  Margin-bottom: 27px;
+}
+.image img {
+  display: block;
+}
+.logo img {
+  display: block;
+}
+strong {
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+p,
+ol,
+ul,
+li {
+  Margin-top: 0;
+}
+ol,
+ul,
+li {
+  padding-left: 0;
+}
+.btn a {
+  mso-hide: all;
+}
+blockquote {
+  Margin-top: 0;
+  Margin-right: 0;
+  Margin-bottom: 0;
+  padding-right: 0;
+}
+.column-top {
+  font-size: 20px;
+  line-height: 20px;
+}
+.column-bottom {
+  font-size: 3px;
+  line-height: 3px;
+}
+.column {
+  text-align: left;
+}
+.contents {
+  width: 100%;
+}
+.padded {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wrapper {
+  background-color: #fefefe;
+  width: 100%;
+  min-width: 620px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+table.wrapper {
+  table-layout: fixed;
+}
+.one-col,
+.two-col,
+.three-col {
+  Margin-left: auto;
+  Margin-right: auto;
+  width: 600px;
+}
+.one-col p,
+.one-col ol,
+.one-col ul {
+  Margin-bottom: 27px;
+}
+.two-col p,
+.two-col ol,
+.two-col ul {
+  Margin-bottom: 24px;
+}
+.two-col .image {
+  Margin-bottom: 24px;
+}
+.two-col .column-bottom {
+  font-size: -4px;
+  line-height: -4px;
+}
+.two-col .column {
+  width: 300px;
+}
+.three-col p,
+.three-col ol,
+.three-col ul {
+  Margin-bottom: 21px;
+}
+.three-col .image {
+  Margin-bottom: 21px;
+}
+.three-col .column-bottom {
+  font-size: -1px;
+  line-height: -1px;
+}
+.three-col .column {
+  width: 200px;
+}
+@media only screen and (max-width: 620px) {
+  [class*=wrapper] {
+    min-width: 320px !important;
+    width: 100%!important;
+  }
+  [class*=wrapper] .one-col,
+  [class*=wrapper] .two-col,
+  [class*=wrapper] .three-col {
+    width: 320px !important;
+  }
+  [class*=wrapper] .column {
+    display: block;
+    float: left;
+    width: 320px !important;
+  }
+  [class*=wrapper] .padded {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  [class*=wrapper] .full {
+    display: none;
+  }
+  [class*=wrapper] .block {
+    display: block !important;
+  }
+  [class*=wrapper] .hide {
+    display: none !important;
+  }
+  [class*=wrapper] .image {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .image img {
+    height: auto !important;
+    width: 100% !important;
+  }
+}
+.wrapper h1 {
+  font-weight: 400;
+}
+.wrapper h2 {
+  font-weight: 700;
+}
+.wrapper h3 {
+  font-style: italic;
+  font-weight: 700;
+}
+.wrapper p,
+.wrapper ol,
+.wrapper ul {
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.wrapper blockquote {
+  font-style: italic;
+}
+.two-col h2 {
+  letter-spacing: -0.028em;
+}
+.divider {
+  font-size: 4px;
+  line-height: 4px;
+}
+.contents .divider,
+.footer .divider table {
+  Margin-bottom: 27px;
+}
+.divider .bull {
+  background-color: #cccccc;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 1px;
+  height: 4px;
+  line-height: 1px;
+  overflow: hidden;
+  width: 4px;
+}
+.email-top,
+.email-bottom {
+  font-size: 54px;
+  line-height: 54px;
+}
+.column {
+  color: #353638;
+}
+.btn {
+  Margin-bottom: 27px;
+}
+.wrapper .btn a {
+  border: 1px solid #888888;
+  border-radius: 5px;
+  color: #888888;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none !important;
+  transition: border-color 0.2s, color 0.2s;
+}
+.wrapper .btn a:hover {
+  border-color: #353638 !important;
+  color: #353638 !important;
+}
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper p,
+.wrapper ol,
+.wrapper ul,
+.wrapper .btn a,
+.wrapper .header td,
+.wrapper .header .logo,
+.wrapper .footer div {
+  font-family: Georgia, serif;
+}
+@media screen and (min-width: 0) {
+  .wrapper h1,
+  .wrapper h2,
+  .wrapper h3,
+  .wrapper p,
+  .wrapper ol,
+  .wrapper ul,
+  .wrapper .btn a,
+  .wrapper .header td,
+  .wrapper .header .logo,
+  .wrapper .footer div {
+    font-family: Merriweather, Georgia, serif !important;
+  }
+}
+.wrapper a {
+  color: #289fd8;
+  text-decoration: underline;
+}
+.wrapper a:hover {
+  text-decoration: none !important;
+}
+.wrapper h1 {
+  font-size: 32px;
+  line-height: 42px;
+  Margin-bottom: 24px;
+}
+.wrapper h2 {
+  font-size: 22px;
+  line-height: 30px;
+  Margin-bottom: 16px;
+}
+.wrapper h3 {
+  font-size: 18px;
+  line-height: 26px;
+  Margin-bottom: 12px;
+}
+.wrapper h1 a,
+.wrapper h2 a,
+.wrapper h3 a {
+  color: #353638;
+  text-decoration: none;
+}
+.wrapper p,
+.wrapper ol,
+.wrapper ul {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.wrapper li {
+  Margin-bottom: 14px;
+}
+.wrapper ol {
+  Margin-left: 24px;
+}
+.wrapper ol li {
+  padding-left: 4px;
+}
+.wrapper ul {
+  margin-left: 18px;
+}
+.wrapper ul li {
+  padding-left: 9px;
+}
+.wrapper blockquote {
+  border-left: 4px solid #808080;
+  color: #808080;
+  Margin-left: 0;
+  padding-left: 17px;
+}
+.one-col .column table:nth-last-child(2) td h1:last-child,
+.one-col .column table:nth-last-child(2) td h2:last-child,
+.one-col .column table:nth-last-child(2) td h3:last-child,
+.one-col .column table:nth-last-child(2) td p:last-child,
+.one-col .column table:nth-last-child(2) td ol:last-child,
+.one-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 27px;
+}
+.one-col p,
+.one-col ol,
+.one-col ul {
+  font-size: 17px;
+  line-height: 27px;
+}
+.two-col .column table:nth-last-child(2) td h1:last-child,
+.two-col .column table:nth-last-child(2) td h2:last-child,
+.two-col .column table:nth-last-child(2) td h3:last-child,
+.two-col .column table:nth-last-child(2) td p:last-child,
+.two-col .column table:nth-last-child(2) td ol:last-child,
+.two-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 24px;
+}
+.two-col .column-bottom {
+  font-size: 6px;
+  line-height: 6px;
+}
+.two-col h1 {
+  font-size: 28px;
+  line-height: 36px;
+  Margin-bottom: 20px;
+}
+.two-col h2 {
+  font-size: 22px;
+  line-height: 30px;
+  Margin-bottom: 14px;
+}
+.two-col h3 {
+  font-size: 16px;
+  line-height: 24px;
+  Margin-bottom: 10px;
+}
+.two-col p,
+.two-col ol,
+.two-col ul {
+  font-size: 15px;
+  line-height: 24px;
+}
+.two-col ol {
+  Margin-left: 21px;
+}
+.two-col ol li {
+  padding-left: 3px;
+}
+.two-col ul {
+  Margin-left: 18px;
+}
+.two-col ul li {
+  padding-left: 6px;
+}
+.two-col li {
+  Margin-bottom: 12px;
+}
+.two-col .divider {
+  Margin-bottom: 24px;
+}
+.two-col blockquote {
+  border-left-width: 3px;
+  padding-left: 15px;
+}
+.two-col .btn {
+  Margin-bottom: 24px;
+}
+.two-col .btn a {
+  font-size: 13px;
+  line-height: 21px;
+  padding: 10px 18px;
+}
+.three-col .column table:nth-last-child(2) td h1:last-child,
+.three-col .column table:nth-last-child(2) td h2:last-child,
+.three-col .column table:nth-last-child(2) td h3:last-child,
+.three-col .column table:nth-last-child(2) td p:last-child,
+.three-col .column table:nth-last-child(2) td ol:last-child,
+.three-col .column table:nth-last-child(2) td ul:last-child {
+  Margin-bottom: 21px;
+}
+.three-col .column-bottom {
+  font-size: 9px;
+  line-height: 9px;
+}
+.three-col h1 {
+  font-size: 24px;
+  line-height: 32px;
+  Margin-bottom: 16px;
+}
+.three-col h2 {
+  font-size: 16px;
+  line-height: 24px;
+  Margin-bottom: 12px;
+}
+.three-col h3 {
+  font-size: 14px;
+  line-height: 22px;
+  Margin-bottom: 8px;
+}
+.three-col p,
+.three-col ol,
+.three-col ul {
+  font-size: 13px;
+  line-height: 21px;
+}
+.three-col ul {
+  Margin-left: 16px;
+}
+.three-col ul li {
+  padding-left: 6px;
+}
+.three-col ol {
+  Margin-left: 18px;
+}
+.three-col ol li {
+  padding-left: 4px;
+}
+.three-col li {
+  Margin-bottom: 10px;
+}
+.three-col .divider {
+  Margin-bottom: 21px;
+}
+.three-col blockquote {
+  border-left-width: 2px;
+  padding-left: 13px;
+}
+.three-col .btn {
+  Margin-bottom: 21px;
+}
+.three-col .btn a {
+  font-size: 11px;
+  line-height: 19px;
+  padding: 8px 14px;
+}
+.header,
+.footer {
+  Margin-left: auto;
+  Margin-right: auto;
+  width: 560px;
+}
+.header td {
+  color: #aaaaaa;
+  font-size: 24px;
+}
+.header .logo {
+  padding-bottom: 27px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 42px;
+  color: #202020;
+}
+.header .logo a {
+  text-decoration: none;
+  color: #202020;
+}
+.footer div {
+  color: #bbbbbb;
+  font-size: 11px;
+  line-height: 17px;
+  Margin-bottom: 17px;
+}
+.footer div a {
+  color: #bbbbbb;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer div a:hover {
+  text-decoration: underline !important;
+}
+.footer .divider {
+  Margin-bottom: 10px;
+}
+.footer .divider table {
+  Margin-left: auto;
+  Margin-right: auto;
+}
+.footer .divider td.spacer {
+  width: 8px;
+}
+@media only screen and (max-width: 620px) {
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h1:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h2:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td h3:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td p:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td ol:last-child,
+  [class*=wrapper] .one-col .column:last-child table:nth-last-child(2) td ul:last-child,
+  [class*=wrapper] .two-col .column:last-child table:nth-last-child(2) td ul:last-child,
+  [class*=wrapper] .three-col .column:last-child table:nth-last-child(2) td ul:last-child {
+    Margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .email-top,
+  [class*=wrapper] .email-bottom {
+    font-size: 28px !important;
+    line-height: 28px !important;
+  }
+  [class*=wrapper] .header,
+  [class*=wrapper] .footer {
+    width: 280px !important;
+  }
+  [class*=wrapper] .logo img {
+    max-width: 280px!important;
+    height: auto!important;
+  }
+  [class*=wrapper] blockquote {
+    border-left-width: 4px !important;
+    margin-left: 0 !important;
+    padding-left: 14px !important;
+  }
+  [class*=wrapper] h1 {
+    font-size: 32px !important;
+    line-height: 42px !important;
+    margin-bottom: 24px !important;
+  }
+  [class*=wrapper] h2 {
+    font-size: 22px !important;
+    line-height: 30px !important;
+    margin-bottom: 16px !important;
+  }
+  [class*=wrapper] h3 {
+    font-size: 18px !important;
+    line-height: 26px !important;
+    margin-bottom: 12px !important;
+  }
+  [class*=wrapper] .one-col p,
+  [class*=wrapper] .two-col p,
+  [class*=wrapper] .three-col p,
+  [class*=wrapper] .one-col ol,
+  [class*=wrapper] .two-col ol,
+  [class*=wrapper] .three-col ol,
+  [class*=wrapper] .one-col ul,
+  [class*=wrapper] .two-col ul,
+  [class*=wrapper] .three-col ul {
+    font-size: 17px !important;
+    line-height: 27px !important;
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] ol {
+    margin-left: 24px !important;
+  }
+  [class*=wrapper] ol li {
+    padding-left: 4px !important;
+  }
+  [class*=wrapper] ul {
+    margin-left: 19px !important;
+  }
+  [class*=wrapper] ul li {
+    padding-left: 9px !important;
+  }
+  [class*=wrapper] li {
+    margin-bottom: 14px !important;
+  }
+  [class*=wrapper] .divider {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .btn {
+    margin-bottom: 27px !important;
+  }
+  [class*=wrapper] .btn a {
+    display: block !important;
+    font-size: 15px !important;
+    line-height: 24px !important;
+    padding: 12px 24px !important;
+  }
+  [class*=wrapper] .column-bottom {
+    font-size: 3px !important;
+    line-height: 3px !important;
+  }
+  [class*=wrapper] .first .column-bottom,
+  [class*=wrapper] .second .column-top,
+  [class*=wrapper] .three-col .second .column-bottom,
+  [class*=wrapper] .third .column-top {
+    display: none;
+  }
+  [class*=wrapper] .show {
+    display: block!important;
+    font-size: 1px;
+    line-height: 1px;
+  }
+  [class*=wrapper] .hide {
+    display: none!important;
+  }
+}
+</style>
+    <!--[if mso]>
+    <style>
+      .spacer, .column-top, .column-bottom {
+        mso-line-height-rule: exactly;
+      }
+    </style>
+    <![endif]-->
+    <meta name="robots" content="noindex,nofollow" />
+    <meta property="og:title" content="My First Campaign" />
+  </head>
+  <body class="emb-font-stack-default" bgcolor="#fefefe">
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <div class="email-top" style="font-size: 54px;line-height: 54px">&nbsp;</div>
+            <table class="header" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 560px">
+              <tbody><tr>
+                <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;color: #aaaaaa;font-size: 24px;font-family: Georgia, serif" align="left">
+                  <table style="border-collapse: collapse;border-spacing: 0">
+                    <tbody><tr>
+                      <td class="logo" style="padding-top: 0;padding-bottom: 27px;padding-left: 0;padding-right: 0;vertical-align: top;color: #202020;font-size: 32px;font-weight: bold;line-height: 42px;font-family: Georgia, serif" align="left" id="emb-email-header"><img alt="TypoSpy" height="128" src="cid:542dfe62c29e8_32898082dbf88883c@Corbins-MacBook-Air.local.mail" style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 128px" width="128" /></td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+    
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="one-col" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 600px">
+              <tbody><tr>
+                <td class="column" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638">
+                  <div><div class="column-top" style="font-size: 20px;line-height: 20px">&nbsp;</div></div>
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <h1 style="Margin-top: 0;font-weight: 400;font-family: Georgia, serif;font-size: 32px;line-height: 42px;Margin-bottom: 24px">Start designing your email</h1><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 27px;font-size: 17px;line-height: 27px">Add new pieces of content like text, images and buttons to your email by dragging the tiles on the left where you want them to go.</p><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 27px;font-size: 17px;line-height: 27px">Add different layouts to your email by clicking on the green <strong style="font-weight: bold">Add layout</strong> button below.</p>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <div style="height:20px">&nbsp;</div>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 27px">
+                          <span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span>
+                        </center>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 3px;line-height: 3px">&nbsp;</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="two-col" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 600px">
+              <tbody><tr>
+                <td class="column first" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638;width: 300px">
+
+                  <div class="image" style="font-size: 0;Margin-bottom: 24px" align="center">
+                    <img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic;display: block;max-width: 128px" src="images/spy-icon-1281.png" alt="" width="128" height="128" />
+                  </div>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 24px">
+                          <span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span>
+                        </center>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 24px;font-size: 15px;line-height: 24px">Ut adi piscing rutrum tellus non laoreet. Proin lectus sem, vesti bulum tincidunt laoreet sed.</p>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 6px;line-height: 6px">&nbsp;</div>
+                </td>
+                <td class="column second" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;text-align: left;color: #353638;width: 300px">
+                  <div><div class="column-top" style="font-size: 20px;line-height: 20px">&nbsp;</div></div>
+                  <table class="contents" style="border-collapse: collapse;border-spacing: 0;width: 100%">
+                    <tbody><tr>
+                      <td class="padded" style="padding-top: 0;padding-bottom: 0;padding-left: 20px;padding-right: 20px;vertical-align: top">
+
+                        <h1 style="Margin-top: 0;font-weight: 400;font-family: Georgia, serif;font-size: 28px;line-height: 36px;Margin-bottom: 20px">Article</h1><blockquote style="Margin-top: 0;Margin-right: 0;Margin-bottom: 0;padding-right: 0;font-style: italic;border-left-color: #808080;border-left-style: solid;border-left-width: 3px;color: #808080;Margin-left: 0;padding-left: 15px"><p style="Margin-top: 0;font-weight: 400;letter-spacing: -0.01em;font-family: Georgia, serif;-webkit-font-smoothing: antialiased;text-rendering: optimizeLegibility;Margin-bottom: 24px;font-size: 15px;line-height: 24px">Mauris ut ipsum ac ligula commodo bib endum. Curabitur rutrum sapien tellus, et mattis est mollis. Pellen tesque suscipit vel nisi et viverra placerat.</p></blockquote>
+
+                      </td>
+                    </tr>
+                  </tbody></table>
+
+                  <div class="column-bottom" style="font-size: 6px;line-height: 6px">&nbsp;</div>
+                </td>
+              </tr>
+            </tbody></table>
+          </center>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table class="wrapper" style="border-collapse: collapse;border-spacing: 0;background-color: #fefefe;width: 100%;min-width: 620px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;table-layout: fixed">
+      <tbody><tr>
+        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top">
+          <center>
+            <table class="footer" style="border-collapse: collapse;border-spacing: 0;Margin-left: auto;Margin-right: auto;width: 560px">
+              <tbody><tr>
+                <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top" align="center">
+                  <div class="column-top" style="font-size: 11px;line-height: 17px;color: #bbbbbb;Margin-bottom: 17px;font-family: Georgia, serif">&nbsp;</div>
+                  <center class="divider" style="font-size: 4px;line-height: 4px;Margin-bottom: 10px">
+                    <table style="border-collapse: collapse;border-spacing: 0;Margin-bottom: 27px;Margin-left: auto;Margin-right: auto">
+                      <tbody><tr>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                        <td class="spacer" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;font-size: 1px;line-height: 1px;width: 8px">&nbsp;</td>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                        <td class="spacer" style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top;font-size: 1px;line-height: 1px;width: 8px">&nbsp;</td>
+                        <td style="padding-top: 0;padding-bottom: 0;padding-left: 0;padding-right: 0;vertical-align: top"><span class="bull" style="background-color: #cccccc;border-radius: 2px;display: inline-block;font-size: 1px;height: 4px;line-height: 1px;overflow: hidden;width: 4px"><img style="border-left-width: 0;border-top-width: 0;border-bottom-width: 0;border-right-width: 0;-ms-interpolation-mode: bicubic" src="https://i2.createsend1.com/static/eb/master/04-broadsheet/images/bull.gif" alt="" width="4" height="4" /></span></td>
+                      </tr>
+                    </tbody></table>
+                  </center>
+                  <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">You're receiving this email because you produce content and sometimes typos, misspellings, and grammatical errors slip through your editors. But that's fine! We're hear to help!<br />
+                    <br />
+                    Grammatical errors diminish the value of your content and can erode consumer confidence in your publication. We have thousands of dedicated grammar nerds scouring your site to find any slip ups! We'll notify you as soon as one of our attentive members spots an error on your site, so you can correct it super quickly.<br />
+                    <br />
+                    If you're interested in learning more, visit the Typo Spy site or contact us!&nbsp;</div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">
+                      <span>No Images? <webversion style="color: #bbbbbb;">Click here</webversion></span>
+
+
+                      <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+                      <unsubscribe>Unsubscribe</unsubscribe>
+                    </div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">Copyright &#169; 2014 Typo Spy</div>
+                    <div style="color: #bbbbbb;font-size: 11px;line-height: 17px;Margin-bottom: 17px;font-family: Georgia, serif">
+                      <span><fblike>Like</fblike></span>
+                      <span>&nbsp;&nbsp;&#183;&nbsp;&nbsp;</span>
+                      <span><tweet>Tweet</tweet></span>
+
+
+                    </div>
+                  </td>
+                </tr>
+              </tbody></table>
+              <div class="email-bottom" style="font-size: 54px;line-height: 54px">&nbsp;</div>
+            </center>
+          </td>
+        </tr>
+      </tbody></table>
+
+    </body></html>
+----==_mimepart_542dfe62cdade_32898082dbf8889dd
+Content-Type: image/png;
+ charset=UTF-8;
+ filename=spy-icon-128.png
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+ filename=spy-icon-128.png
+Content-ID: <542dfe62c29e8_32898082dbf88883c@Corbins-MacBook-Air.local.mail>
+
+iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAGKElEQVR42u2d
+623jOBCAU4JL8O8ACZSkgEsH6w7OHaw7SDrwdhB3cOog7iDqwO7A28EdJ0cD
+Op0ljsSHKOkbgNhgI+vB+Ticl5y7OwRBEARBkIYURbF+eXn5+fz8/NfT09OX
++flvRvghc/v4+LiX+c5G8UbpHygn/RAQxlb+xowLyhjXIhgdrMZQ/hYFLBQC
+WflM/EIhkD0fs79gCMwFDkz2QiGwoR4TvVQIzEl3roubY842OljfIV5yY263
+o0JgTlwqlL9CdXEA6Bt9BYfAleGTlY/a4gIwKgQK88/qTwDAaBC4LoTK0gEw
+CgS5AyCO58PDww/z797cz+d1mIe/1CbiUv+dHGs/s54aAMkhyA0AeRgz/rQV
+yFOA8Okk55Jz5rCdaec3GQS5AGAe4FUqkPWVHSGWvsg15Fq5A5AMgrEBkJUZ
+YqUPsQxy7ZwBSALBWADYFT96k4ncQ0qLMGR+o0KQGgCbev7MMN36mcJpHDq/
+0SBICYA8RMw9PoSPEDvx5TO/USBIAYDcyNAWM/MglRlHO86JtoWPWBGD7/wG
+hyA2ALa/8GuA4o/ms8WN8xXyu0S+wSo3AIJDEBMAq6zLAOUfFDWMQ6ItocgN
+gKAQxAJAo3yzyn6b8atxs6rqoxzjuyXIteUeUkIQeIH5QxADAI3yZW8v/pVt
+sz4eYwJaCl1be69VKggibLF+EIQGwK7Mk9bEN/sR+oRiAbqZSu2WYhNHqwAK
+q4Y+bxQIQgPgivGbK7zp0IXOZLoczcZEurqjPgMo69iYj12oELsPBFEAaO7n
+LuVbAC5D+w/kWF8nr+9Emmd891TUrvG8p5B5lj7+T1AAXO8VtO3tPh1IId5l
+GDKRPsmiW9tWKCvQF4Lv7ScEAK59v2vV+JhZ35SyRAAd1uw9lj9wqw0/ZKSh
+heDbCoQAoGuy6o5WSzx/HLIiNN3MfX2AG4CVMbYCWXnm2rfCz58pIfj2BXwB
+6PLENTF9W1bPfO7t1mdtw8g+UKLn6JNr8PHg27Yv8QkEhBAWQQOBNwBdZlhT
+Zu1aybab58PC8GYbRoL1DigtzWusqCCHl3G9AejKyysBKMZ6eM0K7gLAZUG0
+lqBlO5gGAI4tQOUsparyNbcnX+c2VP+AfTn3MEkAXE6gNGTmaAo1KWe591j5
+gA4QZEssmxnDrAFwOUuayUppBTSrvyuppS1Y5SBJAPBJBIVM6vRY/a8+FmlK
+r8slA2BoKrhHPiFUo8e7j/JjmP7ZAOCKCjTJjpiNHq5GE7k3n7wBACgbNSSe
+Tw2BS/munsUp7fujAnCN7V2dNrbnroiZ6tVsPfZev1w1g9CtYbMGQAuB7bR5
+c+QYSp+Gj65YXa6taVubqvJHBUALgeY1LfHaxYRrQkU5Ro7t8vS1r6NNXfmj
+A1CrfFVKD/3L9RbvtY9QvPH6uPb3dfkmfd5DtD2Lk/9yjNEBqDmGh57h2oe8
+4+97bTlH35dSrAWZxTejZAFAPcbWbAktlmFvV/AfMuoKsoBd/18syH7IyyjW
+5M/qO5GyAqC2JRzHLoO2vIm0vpuZZAdAw7GrMlB8pSxbv9pmjSyAlXvR3He2
+ANS3hbHKwT1fQjnlZrU0HcXZA9AM9Yb4CH32eFeI2JGd/J0hAOfZANAI16Qg
+U4awDPYcpQ0TfTp5ZQs456T8WWwBGqdRPHOpNNa+J+BYtxR2Zdd/94vvNp4J
+AAgAIACAAAACAAgAIACAZAVAbjnypYxsagEof+G1gBxz5AsC4JzLFnBGIdQC
+EKIABAAQAEAAAAEABAAQAECoBTCoBTCoBTCoBTCoBSBEAQgAIACAAAACAAgA
+IACAUAtgUAtgUAtgUAtgUAtAiAIQAEAAAAEABAAQAEAAAKEWwKAWwKAWwKAW
+wKAWgBAFIACAAAACAAgAIACAAAASAYC5/Bn1JYr83UQnAOagygHAhqmcLAAb
+h24rsQClouqEFZie8leKQl0pB+40Vaf7+/sf/CnWaZh9q6uTQq871T7BmG1B
+aX2l5sCELE75h/+YDer6yxmi6//5dS6PkTGr1b9pcyC2TNDslb91xo5sB7M1
++xt1KIFjOC+Hb1Aux4IgeYLSlTFkZKXwyupsR+4GQRAEQZBb8g/12YbL9Ar9
+BQAAAABJRU5ErkJggg==
+
+----==_mimepart_542dfe62cdade_32898082dbf8889dd--
+
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
