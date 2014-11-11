@@ -1,4 +1,4 @@
-// Typo Blaster
+// TypoSpy
 // Script to sent an email out for all new records
 
 // Typo Statuses
